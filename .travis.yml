@@ -17,8 +17,10 @@ before_install:
   - sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources.list.d/ros-latest.list'
   - wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -O - | sudo apt-key add -
   - sudo apt-get -qq update
-  - sudo apt-get install -y -qq  ros-$ROS_DISTRO-ros-base
+  - sudo apt-get install -y -qq  ros-$ROS_DISTRO-ros-base   python-catkin-pkg
   - source /opt/ros/$ROS_DISTRO/setup.bash
+  # fix a bug with catkin_pkg - cf. http://answers.ros.org/question/56873/problem-with-catkin_make/
+  - export PYTHONPATH="$PYTHONPATH:/usr/lib/python2.7/dist-packages"
 
 before_script: #  Use this to prepare your build for testing e.g. copy database configurations, environment variables, etc.
   # Create catkin workspace
