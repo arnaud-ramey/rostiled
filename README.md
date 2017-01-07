@@ -3,7 +3,7 @@ rostiled
 
 [![Build Status](https://travis-ci.org/arnaud-ramey/rostiled.svg)](https://travis-ci.org/arnaud-ramey/rostiled)
 
-An integration of tiled within ROS.
+An integration of tiled, the Map Editor, within ROS.
 
 Licence
 =======
