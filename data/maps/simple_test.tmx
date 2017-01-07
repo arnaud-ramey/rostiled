@@ -1,0 +1,2704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="staggered" renderorder="right-down" width="15" height="30" tilewidth="80" tileheight="40" staggeraxis="y" staggerindex="odd" nextobjectid="9">
+ <tileset firstgid="1" name="simple_test" tilewidth="98" tileheight="104" tilecount="877" columns="3">
+  <tile id="509">
+   <image width="40" height="40" source="simerion/images/#characters#0001.gif"/>
+  </tile>
+  <tile id="510">
+   <image width="40" height="40" source="simerion/images/#characters#0004.gif"/>
+  </tile>
+  <tile id="511">
+   <image width="40" height="40" source="simerion/images/#characters#0006.gif"/>
+  </tile>
+  <tile id="512">
+   <image width="40" height="40" source="simerion/images/#characters#0007.gif"/>
+  </tile>
+  <tile id="513">
+   <image width="40" height="40" source="simerion/images/#characters#0009.gif"/>
+  </tile>
+  <tile id="514">
+   <image width="40" height="40" source="simerion/images/#characters#0010.gif"/>
+  </tile>
+  <tile id="515">
+   <image width="40" height="40" source="simerion/images/#characters#0011.gif"/>
+  </tile>
+  <tile id="516">
+   <image width="40" height="40" source="simerion/images/#characters#0012.gif"/>
+  </tile>
+  <tile id="517">
+   <image width="40" height="40" source="simerion/images/#characters#0013.gif"/>
+  </tile>
+  <tile id="518">
+   <image width="40" height="40" source="simerion/images/#characters#0014.gif"/>
+  </tile>
+  <tile id="519">
+   <image width="40" height="40" source="simerion/images/#characters#0015.gif"/>
+  </tile>
+  <tile id="520">
+   <image width="40" height="40" source="simerion/images/#characters#0016.gif"/>
+  </tile>
+  <tile id="521">
+   <image width="40" height="40" source="simerion/images/#characters#0017.gif"/>
+  </tile>
+  <tile id="522">
+   <image width="40" height="40" source="simerion/images/#characters#0018.gif"/>
+  </tile>
+  <tile id="523">
+   <image width="40" height="40" source="simerion/images/#characters#0019.gif"/>
+  </tile>
+  <tile id="524">
+   <image width="35" height="35" source="simerion/images/#inventory#0.gif"/>
+  </tile>
+  <tile id="525">
+   <image width="35" height="35" source="simerion/images/#inventory#1.gif"/>
+  </tile>
+  <tile id="526">
+   <image width="35" height="35" source="simerion/images/#inventory#2.gif"/>
+  </tile>
+  <tile id="527">
+   <image width="35" height="35" source="simerion/images/#inventory#3.gif"/>
+  </tile>
+  <tile id="528">
+   <image width="35" height="35" source="simerion/images/#inventory#4.gif"/>
+  </tile>
+  <tile id="529">
+   <image width="35" height="35" source="simerion/images/#inventory#5.gif"/>
+  </tile>
+  <tile id="530">
+   <image width="35" height="35" source="simerion/images/#inventory#6.gif"/>
+  </tile>
+  <tile id="531">
+   <image width="35" height="35" source="simerion/images/#inventory#7.gif"/>
+  </tile>
+  <tile id="532">
+   <image width="35" height="35" source="simerion/images/#inventory#8.gif"/>
+  </tile>
+  <tile id="533">
+   <image width="35" height="35" source="simerion/images/#inventory#9.gif"/>
+  </tile>
+  <tile id="534">
+   <image width="35" height="35" source="simerion/images/#inventory#10.gif"/>
+  </tile>
+  <tile id="535">
+   <image width="35" height="35" source="simerion/images/#inventory#11.gif"/>
+  </tile>
+  <tile id="536">
+   <image width="35" height="35" source="simerion/images/#inventory#12.gif"/>
+  </tile>
+  <tile id="537">
+   <image width="35" height="35" source="simerion/images/#inventory#13.gif"/>
+  </tile>
+  <tile id="538">
+   <image width="35" height="35" source="simerion/images/#inventory#14.gif"/>
+  </tile>
+  <tile id="539">
+   <image width="35" height="35" source="simerion/images/#inventory#15.gif"/>
+  </tile>
+  <tile id="540">
+   <image width="35" height="35" source="simerion/images/#inventory#16.gif"/>
+  </tile>
+  <tile id="541">
+   <image width="35" height="35" source="simerion/images/#inventory#17.gif"/>
+  </tile>
+  <tile id="542">
+   <image width="35" height="35" source="simerion/images/#inventory#18.gif"/>
+  </tile>
+  <tile id="543">
+   <image width="35" height="35" source="simerion/images/#inventory#19.gif"/>
+  </tile>
+  <tile id="544">
+   <image width="35" height="35" source="simerion/images/#inventory#20.gif"/>
+  </tile>
+  <tile id="545">
+   <image width="35" height="35" source="simerion/images/#inventory#21.gif"/>
+  </tile>
+  <tile id="546">
+   <image width="35" height="35" source="simerion/images/#inventory#22.gif"/>
+  </tile>
+  <tile id="547">
+   <image width="35" height="35" source="simerion/images/#inventory#23.gif"/>
+  </tile>
+  <tile id="548">
+   <image width="35" height="35" source="simerion/images/#inventory#24.gif"/>
+  </tile>
+  <tile id="549">
+   <image width="35" height="35" source="simerion/images/#inventory#25.gif"/>
+  </tile>
+  <tile id="550">
+   <image width="35" height="35" source="simerion/images/#inventory#26.gif"/>
+  </tile>
+  <tile id="551">
+   <image width="35" height="35" source="simerion/images/#inventory#27.gif"/>
+  </tile>
+  <tile id="552">
+   <image width="35" height="35" source="simerion/images/#inventory#28.gif"/>
+  </tile>
+  <tile id="553">
+   <image width="35" height="35" source="simerion/images/#inventory#29.gif"/>
+  </tile>
+  <tile id="554">
+   <image width="35" height="35" source="simerion/images/#inventory#30.gif"/>
+  </tile>
+  <tile id="555">
+   <image width="35" height="35" source="simerion/images/#inventory#31.gif"/>
+  </tile>
+  <tile id="556">
+   <image width="35" height="35" source="simerion/images/#inventory#32.gif"/>
+  </tile>
+  <tile id="557">
+   <image width="35" height="35" source="simerion/images/#inventory#33.gif"/>
+  </tile>
+  <tile id="558">
+   <image width="35" height="35" source="simerion/images/#inventory#34.gif"/>
+  </tile>
+  <tile id="559">
+   <image width="35" height="35" source="simerion/images/#inventory#35.gif"/>
+  </tile>
+  <tile id="560">
+   <image width="35" height="35" source="simerion/images/#inventory#36.gif"/>
+  </tile>
+  <tile id="561">
+   <image width="35" height="35" source="simerion/images/#inventory#37.gif"/>
+  </tile>
+  <tile id="562">
+   <image width="35" height="35" source="simerion/images/#inventory#38.gif"/>
+  </tile>
+  <tile id="563">
+   <image width="35" height="35" source="simerion/images/#inventory#39.gif"/>
+  </tile>
+  <tile id="564">
+   <image width="35" height="35" source="simerion/images/#inventory#40.gif"/>
+  </tile>
+  <tile id="565">
+   <image width="35" height="35" source="simerion/images/#inventory#41.gif"/>
+  </tile>
+  <tile id="566">
+   <image width="35" height="35" source="simerion/images/#inventory#42.gif"/>
+  </tile>
+  <tile id="567">
+   <image width="35" height="35" source="simerion/images/#inventory#43.gif"/>
+  </tile>
+  <tile id="568">
+   <image width="35" height="35" source="simerion/images/#inventory#44.gif"/>
+  </tile>
+  <tile id="569">
+   <image width="35" height="35" source="simerion/images/#inventory#45.gif"/>
+  </tile>
+  <tile id="570">
+   <image width="35" height="35" source="simerion/images/#inventory#46.gif"/>
+  </tile>
+  <tile id="571">
+   <image width="35" height="35" source="simerion/images/#inventory#47.gif"/>
+  </tile>
+  <tile id="572">
+   <image width="35" height="35" source="simerion/images/#inventory#48.gif"/>
+  </tile>
+  <tile id="573">
+   <image width="35" height="35" source="simerion/images/#inventory#49.gif"/>
+  </tile>
+  <tile id="574">
+   <image width="35" height="35" source="simerion/images/#inventory#50.gif"/>
+  </tile>
+  <tile id="575">
+   <image width="35" height="35" source="simerion/images/#inventory#51.gif"/>
+  </tile>
+  <tile id="576">
+   <image width="35" height="35" source="simerion/images/#inventory#52.gif"/>
+  </tile>
+  <tile id="577">
+   <image width="80" height="80" source="simerion/images/#misc#0.gif"/>
+  </tile>
+  <tile id="578">
+   <image width="16" height="16" source="simerion/images/#misc#arrows#arrow_down.gif"/>
+  </tile>
+  <tile id="579">
+   <image width="10" height="10" source="simerion/images/#misc#arrows#arrow_green.gif"/>
+  </tile>
+  <tile id="580">
+   <image width="16" height="16" source="simerion/images/#misc#arrows#arrow_left.gif"/>
+  </tile>
+  <tile id="581">
+   <image width="10" height="10" source="simerion/images/#misc#arrows#arrow_red.gif"/>
+  </tile>
+  <tile id="582">
+   <image width="16" height="16" source="simerion/images/#misc#arrows#arrow_right.gif"/>
+  </tile>
+  <tile id="583">
+   <image width="24" height="24" source="simerion/images/#misc#arrows#arrows_1#fleche_bas_droite.gif"/>
+  </tile>
+  <tile id="584">
+   <image width="24" height="24" source="simerion/images/#misc#arrows#arrows_1#fleche_bas_gauche.gif"/>
+  </tile>
+  <tile id="585">
+   <image width="24" height="24" source="simerion/images/#misc#arrows#arrows_1#fleche_bas.gif"/>
+  </tile>
+  <tile id="586">
+   <image width="24" height="24" source="simerion/images/#misc#arrows#arrows_1#fleche_droite.gif"/>
+  </tile>
+  <tile id="587">
+   <image width="24" height="24" source="simerion/images/#misc#arrows#arrows_1#fleche_gauche.gif"/>
+  </tile>
+  <tile id="588">
+   <image width="24" height="24" source="simerion/images/#misc#arrows#arrows_1#fleche_haut_droite.gif"/>
+  </tile>
+  <tile id="589">
+   <image width="24" height="24" source="simerion/images/#misc#arrows#arrows_1#fleche_haut_gauche.gif"/>
+  </tile>
+  <tile id="590">
+   <image width="24" height="24" source="simerion/images/#misc#arrows#arrows_1#fleche_haut.gif"/>
+  </tile>
+  <tile id="591">
+   <image width="37" height="20" source="simerion/images/#misc#arrows#arrows_2#fleche_bas_droite.gif"/>
+  </tile>
+  <tile id="592">
+   <image width="37" height="20" source="simerion/images/#misc#arrows#arrows_2#fleche_bas_gauche.gif"/>
+  </tile>
+  <tile id="593">
+   <image width="37" height="20" source="simerion/images/#misc#arrows#arrows_2#fleche_haut_droite.gif"/>
+  </tile>
+  <tile id="594">
+   <image width="37" height="20" source="simerion/images/#misc#arrows#arrows_2#fleche_haut_gauche.gif"/>
+  </tile>
+  <tile id="595">
+   <image width="97" height="20" source="simerion/images/#misc#bouton.gif"/>
+  </tile>
+  <tile id="596">
+   <image width="41" height="39" source="simerion/images/#misc#chargement.gif"/>
+  </tile>
+  <tile id="597">
+   <image width="15" height="15" source="simerion/images/#misc#ct.gif"/>
+  </tile>
+  <tile id="598">
+   <image width="26" height="17" source="simerion/images/#misc#dk.gif"/>
+  </tile>
+  <tile id="599">
+   <image width="15" height="15" source="simerion/images/#misc#energie.gif"/>
+  </tile>
+  <tile id="600">
+   <image width="23" height="43" source="simerion/images/#misc#le_saviez_vous.gif"/>
+  </tile>
+  <tile id="601">
+   <image width="98" height="98" source="simerion/images/#misc#rosace_black.gif"/>
+  </tile>
+  <tile id="602">
+   <image width="98" height="98" source="simerion/images/#misc#rosace.gif"/>
+  </tile>
+  <tile id="603">
+   <image width="11" height="15" source="simerion/images/#misc#time.gif"/>
+  </tile>
+  <tile id="604">
+   <image width="20" height="12" source="simerion/images/#misc#xp.gif"/>
+  </tile>
+  <tile id="605">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0000.gif"/>
+  </tile>
+  <tile id="606">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0001.gif"/>
+  </tile>
+  <tile id="607">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0002.gif"/>
+  </tile>
+  <tile id="608">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0003.gif"/>
+  </tile>
+  <tile id="609">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0004.gif"/>
+  </tile>
+  <tile id="610">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0005.gif"/>
+  </tile>
+  <tile id="611">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0006.gif"/>
+  </tile>
+  <tile id="612">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0007.gif"/>
+  </tile>
+  <tile id="613">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0008.gif"/>
+  </tile>
+  <tile id="614">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0009.gif"/>
+  </tile>
+  <tile id="615">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0010.gif"/>
+  </tile>
+  <tile id="616">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0011.gif"/>
+  </tile>
+  <tile id="617">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0012.gif"/>
+  </tile>
+  <tile id="618">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0013.gif"/>
+  </tile>
+  <tile id="619">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0014.gif"/>
+  </tile>
+  <tile id="620">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0015.gif"/>
+  </tile>
+  <tile id="621">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0016.gif"/>
+  </tile>
+  <tile id="622">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0017.gif"/>
+  </tile>
+  <tile id="623">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0018.gif"/>
+  </tile>
+  <tile id="624">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0019.gif"/>
+  </tile>
+  <tile id="625">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0020.gif"/>
+  </tile>
+  <tile id="626">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0021.gif"/>
+  </tile>
+  <tile id="627">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0022.gif"/>
+  </tile>
+  <tile id="628">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0023.gif"/>
+  </tile>
+  <tile id="629">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0024.gif"/>
+  </tile>
+  <tile id="630">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0025.gif"/>
+  </tile>
+  <tile id="631">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0026.gif"/>
+  </tile>
+  <tile id="632">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0027.gif"/>
+  </tile>
+  <tile id="633">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0028.gif"/>
+  </tile>
+  <tile id="634">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0029.gif"/>
+  </tile>
+  <tile id="635">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0030.gif"/>
+  </tile>
+  <tile id="636">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0031.gif"/>
+  </tile>
+  <tile id="637">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0032.gif"/>
+  </tile>
+  <tile id="638">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0033.gif"/>
+  </tile>
+  <tile id="639">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0034.gif"/>
+  </tile>
+  <tile id="640">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0035.gif"/>
+  </tile>
+  <tile id="641">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0036.gif"/>
+  </tile>
+  <tile id="642">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0037.gif"/>
+  </tile>
+  <tile id="643">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0038.gif"/>
+  </tile>
+  <tile id="644">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0039.gif"/>
+  </tile>
+  <tile id="645">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0040.gif"/>
+  </tile>
+  <tile id="646">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0041.gif"/>
+  </tile>
+  <tile id="647">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0042.gif"/>
+  </tile>
+  <tile id="648">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0043.gif"/>
+  </tile>
+  <tile id="649">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0044.gif"/>
+  </tile>
+  <tile id="650">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0045.gif"/>
+  </tile>
+  <tile id="651">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0046.gif"/>
+  </tile>
+  <tile id="652">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0047.gif"/>
+  </tile>
+  <tile id="653">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0048.gif"/>
+  </tile>
+  <tile id="654">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0049.gif"/>
+  </tile>
+  <tile id="655">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0050.gif"/>
+  </tile>
+  <tile id="656">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0051.gif"/>
+  </tile>
+  <tile id="657">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0052.gif"/>
+  </tile>
+  <tile id="658">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0053.gif"/>
+  </tile>
+  <tile id="659">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0054.gif"/>
+  </tile>
+  <tile id="660">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0055.gif"/>
+  </tile>
+  <tile id="661">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0056.gif"/>
+  </tile>
+  <tile id="662">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0057.gif"/>
+  </tile>
+  <tile id="663">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0058.gif"/>
+  </tile>
+  <tile id="664">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0059.gif"/>
+  </tile>
+  <tile id="665">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0060.gif"/>
+  </tile>
+  <tile id="666">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0061.gif"/>
+  </tile>
+  <tile id="667">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0062.gif"/>
+  </tile>
+  <tile id="668">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0063.gif"/>
+  </tile>
+  <tile id="669">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0064.gif"/>
+  </tile>
+  <tile id="670">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0065.gif"/>
+  </tile>
+  <tile id="671">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0066.gif"/>
+  </tile>
+  <tile id="672">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0067.gif"/>
+  </tile>
+  <tile id="673">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0068.gif"/>
+  </tile>
+  <tile id="674">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0069.gif"/>
+  </tile>
+  <tile id="675">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0070.gif"/>
+  </tile>
+  <tile id="676">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0071.gif"/>
+  </tile>
+  <tile id="677">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0072.gif"/>
+  </tile>
+  <tile id="678">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0073.gif"/>
+  </tile>
+  <tile id="679">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0074.gif"/>
+  </tile>
+  <tile id="680">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0075.gif"/>
+  </tile>
+  <tile id="681">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0076.gif"/>
+  </tile>
+  <tile id="682">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0077.gif"/>
+  </tile>
+  <tile id="683">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0078.gif"/>
+  </tile>
+  <tile id="684">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0079.gif"/>
+  </tile>
+  <tile id="685">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0080.gif"/>
+  </tile>
+  <tile id="686">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0081.gif"/>
+  </tile>
+  <tile id="687">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0082.gif"/>
+  </tile>
+  <tile id="688">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0083.gif"/>
+  </tile>
+  <tile id="689">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0084.gif"/>
+  </tile>
+  <tile id="690">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0085.gif"/>
+  </tile>
+  <tile id="691">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#decor#0086.gif"/>
+  </tile>
+  <tile id="692">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0000.gif"/>
+  </tile>
+  <tile id="693">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0001.gif"/>
+  </tile>
+  <tile id="694">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0002.gif"/>
+  </tile>
+  <tile id="695">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0003.gif"/>
+  </tile>
+  <tile id="696">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0004.gif"/>
+  </tile>
+  <tile id="697">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0005.gif"/>
+  </tile>
+  <tile id="698">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0006.gif"/>
+  </tile>
+  <tile id="699">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0007.gif"/>
+  </tile>
+  <tile id="700">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0008.gif"/>
+  </tile>
+  <tile id="701">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0009.gif"/>
+  </tile>
+  <tile id="702">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0010.gif"/>
+  </tile>
+  <tile id="703">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0011.gif"/>
+  </tile>
+  <tile id="704">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0012.gif"/>
+  </tile>
+  <tile id="705">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0013.gif"/>
+  </tile>
+  <tile id="706">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0014.gif"/>
+  </tile>
+  <tile id="707">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0015.gif"/>
+  </tile>
+  <tile id="708">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0016.gif"/>
+  </tile>
+  <tile id="709">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0017.gif"/>
+  </tile>
+  <tile id="710">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0018.gif"/>
+  </tile>
+  <tile id="711">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0019.gif"/>
+  </tile>
+  <tile id="712">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0020.gif"/>
+  </tile>
+  <tile id="713">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0021.gif"/>
+  </tile>
+  <tile id="714">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#inside#ground#0022.gif"/>
+  </tile>
+  <tile id="715">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0001-1.gif"/>
+  </tile>
+  <tile id="716">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0001-2.gif"/>
+  </tile>
+  <tile id="717">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0001-3.gif"/>
+  </tile>
+  <tile id="718">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0002.gif"/>
+  </tile>
+  <tile id="719">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0003.gif"/>
+  </tile>
+  <tile id="720">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0004-1.gif"/>
+  </tile>
+  <tile id="721">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0004-2.gif"/>
+  </tile>
+  <tile id="722">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0004-3.gif"/>
+  </tile>
+  <tile id="723">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0004-4.gif"/>
+  </tile>
+  <tile id="724">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0004-5.gif"/>
+  </tile>
+  <tile id="725">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0004-6.gif"/>
+  </tile>
+  <tile id="726">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0004-7.gif"/>
+  </tile>
+  <tile id="727">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0004-8.gif"/>
+  </tile>
+  <tile id="728">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0004-9.gif"/>
+  </tile>
+  <tile id="729">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0004-10.gif"/>
+  </tile>
+  <tile id="730">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0004-11.gif"/>
+  </tile>
+  <tile id="731">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0004-12.gif"/>
+  </tile>
+  <tile id="732">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0004-13.gif"/>
+  </tile>
+  <tile id="733">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0004-14.gif"/>
+  </tile>
+  <tile id="734">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0004-15.gif"/>
+  </tile>
+  <tile id="735">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0005-1.gif"/>
+  </tile>
+  <tile id="736">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0005-2.gif"/>
+  </tile>
+  <tile id="737">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0005-3.gif"/>
+  </tile>
+  <tile id="738">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0005-4.gif"/>
+  </tile>
+  <tile id="739">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0006-1.gif"/>
+  </tile>
+  <tile id="740">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0006-2.gif"/>
+  </tile>
+  <tile id="741">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0006-3.gif"/>
+  </tile>
+  <tile id="742">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0006-4.gif"/>
+  </tile>
+  <tile id="743">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0007.gif"/>
+  </tile>
+  <tile id="744">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0008.gif"/>
+  </tile>
+  <tile id="745">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0009-1.gif"/>
+  </tile>
+  <tile id="746">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0009-2.gif"/>
+  </tile>
+  <tile id="747">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0009-3.gif"/>
+  </tile>
+  <tile id="748">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0009-4.gif"/>
+  </tile>
+  <tile id="749">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0010.gif"/>
+  </tile>
+  <tile id="750">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0011-1.gif"/>
+  </tile>
+  <tile id="751">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0011-2.gif"/>
+  </tile>
+  <tile id="752">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0011-3.gif"/>
+  </tile>
+  <tile id="753">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0011-4.gif"/>
+  </tile>
+  <tile id="754">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0012-1.gif"/>
+  </tile>
+  <tile id="755">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0012-2.gif"/>
+  </tile>
+  <tile id="756">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0013-1.gif"/>
+  </tile>
+  <tile id="757">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0013-2.gif"/>
+  </tile>
+  <tile id="758">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0013-3.gif"/>
+  </tile>
+  <tile id="759">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0013-4.gif"/>
+  </tile>
+  <tile id="760">
+   <image width="82" height="80" source="simerion/images/#tiles#buildings#outside#0014.gif"/>
+  </tile>
+  <tile id="761">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0015.gif"/>
+  </tile>
+  <tile id="762">
+   <image width="82" height="80" source="simerion/images/#tiles#buildings#outside#0016.gif"/>
+  </tile>
+  <tile id="763">
+   <image width="82" height="80" source="simerion/images/#tiles#buildings#outside#0017.gif"/>
+  </tile>
+  <tile id="764">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0018.gif"/>
+  </tile>
+  <tile id="765">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0019.gif"/>
+  </tile>
+  <tile id="766">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0020.gif"/>
+  </tile>
+  <tile id="767">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0021-1.gif"/>
+  </tile>
+  <tile id="768">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0021-2.gif"/>
+  </tile>
+  <tile id="769">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0022-1.gif"/>
+  </tile>
+  <tile id="770">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0022-2.gif"/>
+  </tile>
+  <tile id="771">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0023-1.gif"/>
+  </tile>
+  <tile id="772">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0023-2.gif"/>
+  </tile>
+  <tile id="773">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0023-3.gif"/>
+  </tile>
+  <tile id="774">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0023-4.gif"/>
+  </tile>
+  <tile id="775">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0024-1.gif"/>
+  </tile>
+  <tile id="776">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0024-2.gif"/>
+  </tile>
+  <tile id="777">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0024-3.gif"/>
+  </tile>
+  <tile id="778">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0024-4.gif"/>
+  </tile>
+  <tile id="779">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0024-41.gif"/>
+  </tile>
+  <tile id="780">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0024-43.gif"/>
+  </tile>
+  <tile id="781">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0025.gif"/>
+  </tile>
+  <tile id="782">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0026.gif"/>
+  </tile>
+  <tile id="783">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0027.gif"/>
+  </tile>
+  <tile id="784">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0028.gif"/>
+  </tile>
+  <tile id="785">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0029.gif"/>
+  </tile>
+  <tile id="786">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0030-1.gif"/>
+  </tile>
+  <tile id="787">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0030-2.gif"/>
+  </tile>
+  <tile id="788">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0031.gif"/>
+  </tile>
+  <tile id="789">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0032-1.gif"/>
+  </tile>
+  <tile id="790">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0032-2.gif"/>
+  </tile>
+  <tile id="791">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0033-1.gif"/>
+  </tile>
+  <tile id="792">
+   <image width="82" height="82" source="simerion/images/#tiles#buildings#outside#0033-2.gif"/>
+  </tile>
+  <tile id="793">
+   <image width="82" height="82" source="simerion/images/#tiles#change_zones#0001.gif"/>
+  </tile>
+  <tile id="794">
+   <image width="82" height="82" source="simerion/images/#tiles#change_zones#0002.gif"/>
+  </tile>
+  <tile id="795">
+   <image width="82" height="82" source="simerion/images/#tiles#change_zones#0004-1.gif"/>
+  </tile>
+  <tile id="796">
+   <image width="82" height="82" source="simerion/images/#tiles#change_zones#0004-2.gif"/>
+  </tile>
+  <tile id="797">
+   <image width="82" height="82" source="simerion/images/#tiles#change_zones#0005-1.gif"/>
+  </tile>
+  <tile id="798">
+   <image width="82" height="82" source="simerion/images/#tiles#change_zones#0005-2.gif"/>
+  </tile>
+  <tile id="799">
+   <image width="82" height="82" source="simerion/images/#tiles#change_zones#0005-3.gif"/>
+  </tile>
+  <tile id="800">
+   <image width="82" height="82" source="simerion/images/#tiles#change_zones#0005-4 - Copie.gif"/>
+  </tile>
+  <tile id="801">
+   <image width="82" height="82" source="simerion/images/#tiles#change_zones#0006-1.gif"/>
+  </tile>
+  <tile id="802">
+   <image width="82" height="82" source="simerion/images/#tiles#change_zones#0006-2.gif"/>
+  </tile>
+  <tile id="803">
+   <image width="82" height="82" source="simerion/images/#tiles#change_zones#0007.gif"/>
+  </tile>
+  <tile id="804">
+   <image width="82" height="82" source="simerion/images/#tiles#change_zones#0008.gif"/>
+  </tile>
+  <tile id="805">
+   <image width="82" height="82" source="simerion/images/#tiles#change_zones#0009.gif"/>
+  </tile>
+  <tile id="806">
+   <image width="82" height="82" source="simerion/images/#tiles#change_zones#0010.gif"/>
+  </tile>
+  <tile id="807">
+   <image width="82" height="82" source="simerion/images/#tiles#change_zones#0011.gif"/>
+  </tile>
+  <tile id="808">
+   <image width="82" height="82" source="simerion/images/#tiles#change_zones#0012.gif"/>
+  </tile>
+  <tile id="809">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0001.gif"/>
+  </tile>
+  <tile id="810">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0002.gif"/>
+  </tile>
+  <tile id="811">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0003.gif"/>
+  </tile>
+  <tile id="812">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0004.gif"/>
+  </tile>
+  <tile id="813">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0005.gif"/>
+  </tile>
+  <tile id="814">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0006.gif"/>
+  </tile>
+  <tile id="815">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0007.gif"/>
+  </tile>
+  <tile id="816">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0008.gif"/>
+  </tile>
+  <tile id="817">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0009.gif"/>
+  </tile>
+  <tile id="818">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0010.gif"/>
+  </tile>
+  <tile id="819">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0011.gif"/>
+  </tile>
+  <tile id="820">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0012.gif"/>
+  </tile>
+  <tile id="821">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0013.gif"/>
+  </tile>
+  <tile id="822">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0014.gif"/>
+  </tile>
+  <tile id="823">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0015.gif"/>
+  </tile>
+  <tile id="824">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0016.gif"/>
+  </tile>
+  <tile id="825">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0017.gif"/>
+  </tile>
+  <tile id="826">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0018.gif"/>
+  </tile>
+  <tile id="827">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0019.gif"/>
+  </tile>
+  <tile id="828">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0020.gif"/>
+  </tile>
+  <tile id="829">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0021.gif"/>
+  </tile>
+  <tile id="830">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0022.gif"/>
+  </tile>
+  <tile id="831">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0023.gif"/>
+  </tile>
+  <tile id="832">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0024.gif"/>
+  </tile>
+  <tile id="833">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0025.gif"/>
+  </tile>
+  <tile id="834">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0026.gif"/>
+  </tile>
+  <tile id="835">
+   <image width="82" height="82" source="simerion/images/#tiles#characters#0027.gif"/>
+  </tile>
+  <tile id="836">
+   <image width="82" height="82" source="simerion/images/#tiles#masks#curseur.gif"/>
+  </tile>
+  <tile id="837">
+   <image width="82" height="82" source="simerion/images/#tiles#masks#curseur2.gif"/>
+  </tile>
+  <tile id="838">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0001.gif"/>
+  </tile>
+  <tile id="839">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0002.gif"/>
+  </tile>
+  <tile id="840">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0003.gif"/>
+  </tile>
+  <tile id="841">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0004.gif"/>
+  </tile>
+  <tile id="842">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0005.gif"/>
+  </tile>
+  <tile id="843">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0006.gif"/>
+  </tile>
+  <tile id="844">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0007.gif"/>
+  </tile>
+  <tile id="845">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0008.gif"/>
+  </tile>
+  <tile id="846">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0009.gif"/>
+  </tile>
+  <tile id="847">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0010.gif"/>
+  </tile>
+  <tile id="848">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0011.gif"/>
+  </tile>
+  <tile id="849">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0012.gif"/>
+  </tile>
+  <tile id="850">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0013_noanim.gif"/>
+  </tile>
+  <tile id="851">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0013.gif"/>
+  </tile>
+  <tile id="852">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0014.gif"/>
+  </tile>
+  <tile id="853">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0015.gif"/>
+  </tile>
+  <tile id="854">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0016.gif"/>
+  </tile>
+  <tile id="855">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0017.gif"/>
+  </tile>
+  <tile id="856">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0018.gif"/>
+  </tile>
+  <tile id="857">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0019.gif"/>
+  </tile>
+  <tile id="858">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0020.gif"/>
+  </tile>
+  <tile id="859">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0021.gif"/>
+  </tile>
+  <tile id="860">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0022.gif"/>
+  </tile>
+  <tile id="861">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0023.gif"/>
+  </tile>
+  <tile id="862">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0024.gif"/>
+  </tile>
+  <tile id="863">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0025.gif"/>
+  </tile>
+  <tile id="864">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0026.gif"/>
+  </tile>
+  <tile id="865">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0027.gif"/>
+  </tile>
+  <tile id="866">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0028.gif"/>
+  </tile>
+  <tile id="867">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0029.gif"/>
+  </tile>
+  <tile id="868">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0030.gif"/>
+  </tile>
+  <tile id="869">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0031.gif"/>
+  </tile>
+  <tile id="870">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0032.gif"/>
+  </tile>
+  <tile id="871">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0033.gif"/>
+  </tile>
+  <tile id="872">
+   <image width="82" height="82" source="simerion/images/#tiles#npc#0034.gif"/>
+  </tile>
+  <tile id="873">
+   <image width="82" height="82" source="simerion/images/#tiles#objects#0001.gif"/>
+  </tile>
+  <tile id="874">
+   <image width="82" height="82" source="simerion/images/#tiles#objects#0002.gif"/>
+  </tile>
+  <tile id="875">
+   <image width="82" height="82" source="simerion/images/#tiles#objects#0003.gif"/>
+  </tile>
+  <tile id="876">
+   <image width="82" height="82" source="simerion/images/#tiles#objects#0004.gif"/>
+  </tile>
+  <tile id="877">
+   <image width="82" height="82" source="simerion/images/#tiles#objects#0005.gif"/>
+  </tile>
+  <tile id="878">
+   <image width="82" height="82" source="simerion/images/#tiles#objects#0006.gif"/>
+  </tile>
+  <tile id="879">
+   <image width="82" height="82" source="simerion/images/#tiles#objects#0007.gif"/>
+  </tile>
+  <tile id="880">
+   <image width="82" height="82" source="simerion/images/#tiles#objects#0008.gif"/>
+  </tile>
+  <tile id="881">
+   <image width="82" height="82" source="simerion/images/#tiles#objects#0009.gif"/>
+  </tile>
+  <tile id="882">
+   <image width="82" height="82" source="simerion/images/#tiles#objects#0010.gif"/>
+  </tile>
+  <tile id="883">
+   <image width="82" height="82" source="simerion/images/#tiles#objects#0011.gif"/>
+  </tile>
+  <tile id="884">
+   <image width="82" height="82" source="simerion/images/#tiles#objects#0012.gif"/>
+  </tile>
+  <tile id="885">
+   <image width="82" height="82" source="simerion/images/#tiles#objects#0013.gif"/>
+  </tile>
+  <tile id="886">
+   <image width="82" height="82" source="simerion/images/#tiles#objects#0014.gif"/>
+  </tile>
+  <tile id="887">
+   <image width="82" height="82" source="simerion/images/#tiles#objects#0015.gif"/>
+  </tile>
+  <tile id="888">
+   <image width="82" height="82" source="simerion/images/#tiles#objects#0016.gif"/>
+  </tile>
+  <tile id="889">
+   <image width="82" height="82" source="simerion/images/#tiles#objects#0018.gif"/>
+  </tile>
+  <tile id="890">
+   <image width="82" height="82" source="simerion/images/#tiles#weather#0001.gif"/>
+  </tile>
+  <tile id="891">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0000.gif"/>
+  </tile>
+  <tile id="892">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0001.gif"/>
+  </tile>
+  <tile id="893">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0002.gif"/>
+  </tile>
+  <tile id="894">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0003.gif"/>
+  </tile>
+  <tile id="895">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0004.gif"/>
+  </tile>
+  <tile id="896">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0005.gif"/>
+  </tile>
+  <tile id="897">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0006.gif"/>
+  </tile>
+  <tile id="898">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0007.gif"/>
+  </tile>
+  <tile id="899">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0008.gif"/>
+  </tile>
+  <tile id="900">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0009.gif"/>
+  </tile>
+  <tile id="901">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0010.gif"/>
+  </tile>
+  <tile id="902">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0011.gif"/>
+  </tile>
+  <tile id="903">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0012.gif"/>
+  </tile>
+  <tile id="904">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0013.gif"/>
+  </tile>
+  <tile id="905">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0014.gif"/>
+  </tile>
+  <tile id="906">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0015.gif"/>
+  </tile>
+  <tile id="907">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0016.gif"/>
+  </tile>
+  <tile id="908">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0017.gif"/>
+  </tile>
+  <tile id="909">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0018.gif"/>
+  </tile>
+  <tile id="910">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0019.gif"/>
+  </tile>
+  <tile id="911">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0020.gif"/>
+  </tile>
+  <tile id="912">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0021.gif"/>
+  </tile>
+  <tile id="913">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0022.gif"/>
+  </tile>
+  <tile id="914">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0023.gif"/>
+  </tile>
+  <tile id="915">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0024.gif"/>
+  </tile>
+  <tile id="916">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0025.gif"/>
+  </tile>
+  <tile id="917">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0026.gif"/>
+  </tile>
+  <tile id="918">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0027.gif"/>
+  </tile>
+  <tile id="919">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0028.gif"/>
+  </tile>
+  <tile id="920">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0029.gif"/>
+  </tile>
+  <tile id="921">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0030.gif"/>
+  </tile>
+  <tile id="922">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0031.gif"/>
+  </tile>
+  <tile id="923">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0032.gif"/>
+  </tile>
+  <tile id="924">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0033.gif"/>
+  </tile>
+  <tile id="925">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0034.gif"/>
+  </tile>
+  <tile id="926">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0035.gif"/>
+  </tile>
+  <tile id="927">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0036.gif"/>
+  </tile>
+  <tile id="928">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0037.gif"/>
+  </tile>
+  <tile id="929">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0038.gif"/>
+  </tile>
+  <tile id="930">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0039.gif"/>
+  </tile>
+  <tile id="931">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0040.gif"/>
+  </tile>
+  <tile id="932">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0041.gif"/>
+  </tile>
+  <tile id="933">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0042.gif"/>
+  </tile>
+  <tile id="934">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0043.gif"/>
+  </tile>
+  <tile id="935">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0044.gif"/>
+  </tile>
+  <tile id="936">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0045.gif"/>
+  </tile>
+  <tile id="937">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0046.gif"/>
+  </tile>
+  <tile id="938">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0047.gif"/>
+  </tile>
+  <tile id="939">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0048.gif"/>
+  </tile>
+  <tile id="940">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0049.gif"/>
+  </tile>
+  <tile id="941">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0050.gif"/>
+  </tile>
+  <tile id="942">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0051.gif"/>
+  </tile>
+  <tile id="943">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0052.gif"/>
+  </tile>
+  <tile id="944">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0053.gif"/>
+  </tile>
+  <tile id="945">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0054.gif"/>
+  </tile>
+  <tile id="946">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0055.gif"/>
+  </tile>
+  <tile id="947">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0056.gif"/>
+  </tile>
+  <tile id="948">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0057.gif"/>
+  </tile>
+  <tile id="949">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0058.gif"/>
+  </tile>
+  <tile id="950">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0059.gif"/>
+  </tile>
+  <tile id="951">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0060.gif"/>
+  </tile>
+  <tile id="952">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0061.gif"/>
+  </tile>
+  <tile id="953">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0062.gif"/>
+  </tile>
+  <tile id="954">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0063.gif"/>
+  </tile>
+  <tile id="955">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0064.gif"/>
+  </tile>
+  <tile id="956">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0065.gif"/>
+  </tile>
+  <tile id="957">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0066.gif"/>
+  </tile>
+  <tile id="958">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0067.gif"/>
+  </tile>
+  <tile id="959">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0068.gif"/>
+  </tile>
+  <tile id="960">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0069.gif"/>
+  </tile>
+  <tile id="961">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0070.gif"/>
+  </tile>
+  <tile id="962">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0071.gif"/>
+  </tile>
+  <tile id="963">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0072.gif"/>
+  </tile>
+  <tile id="964">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0073.gif"/>
+  </tile>
+  <tile id="965">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0074.gif"/>
+  </tile>
+  <tile id="966">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0075.gif"/>
+  </tile>
+  <tile id="967">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0076.gif"/>
+  </tile>
+  <tile id="968">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0077.gif"/>
+  </tile>
+  <tile id="969">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0078.gif"/>
+  </tile>
+  <tile id="970">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0079.gif"/>
+  </tile>
+  <tile id="971">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0080.gif"/>
+  </tile>
+  <tile id="972">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0081.gif"/>
+  </tile>
+  <tile id="973">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0082.gif"/>
+  </tile>
+  <tile id="974">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0083.gif"/>
+  </tile>
+  <tile id="975">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0084.gif"/>
+  </tile>
+  <tile id="976">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0085.gif"/>
+  </tile>
+  <tile id="977">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0086.gif"/>
+  </tile>
+  <tile id="978">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0087.gif"/>
+  </tile>
+  <tile id="979">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0088.gif"/>
+  </tile>
+  <tile id="980">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0089.gif"/>
+  </tile>
+  <tile id="981">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0090.gif"/>
+  </tile>
+  <tile id="982">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0091.gif"/>
+  </tile>
+  <tile id="983">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0092.gif"/>
+  </tile>
+  <tile id="984">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0093.gif"/>
+  </tile>
+  <tile id="985">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0094.gif"/>
+  </tile>
+  <tile id="986">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0095.gif"/>
+  </tile>
+  <tile id="987">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0096.gif"/>
+  </tile>
+  <tile id="988">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0097.gif"/>
+  </tile>
+  <tile id="989">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0098.gif"/>
+  </tile>
+  <tile id="990">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0099.gif"/>
+  </tile>
+  <tile id="991">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0100.gif"/>
+  </tile>
+  <tile id="992">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0101.gif"/>
+  </tile>
+  <tile id="993">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0102.gif"/>
+  </tile>
+  <tile id="994">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0103.gif"/>
+  </tile>
+  <tile id="995">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0104.gif"/>
+  </tile>
+  <tile id="996">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0105.gif"/>
+  </tile>
+  <tile id="997">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0106.gif"/>
+  </tile>
+  <tile id="998">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0107.gif"/>
+  </tile>
+  <tile id="999">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0108.gif"/>
+  </tile>
+  <tile id="1000">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0109.gif"/>
+  </tile>
+  <tile id="1001">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0110.gif"/>
+  </tile>
+  <tile id="1002">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0111.gif"/>
+  </tile>
+  <tile id="1003">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0112.gif"/>
+  </tile>
+  <tile id="1004">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0113.gif"/>
+  </tile>
+  <tile id="1005">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0114.gif"/>
+  </tile>
+  <tile id="1006">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0115.gif"/>
+  </tile>
+  <tile id="1007">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0116.gif"/>
+  </tile>
+  <tile id="1008">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0117.gif"/>
+  </tile>
+  <tile id="1009">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0118.gif"/>
+  </tile>
+  <tile id="1010">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0119.gif"/>
+  </tile>
+  <tile id="1011">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0120.gif"/>
+  </tile>
+  <tile id="1012">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0121.gif"/>
+  </tile>
+  <tile id="1013">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0122.gif"/>
+  </tile>
+  <tile id="1014">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0123.gif"/>
+  </tile>
+  <tile id="1015">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0124.gif"/>
+  </tile>
+  <tile id="1016">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0125.gif"/>
+  </tile>
+  <tile id="1017">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0126.gif"/>
+  </tile>
+  <tile id="1018">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0127.gif"/>
+  </tile>
+  <tile id="1019">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0128.gif"/>
+  </tile>
+  <tile id="1020">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0129.gif"/>
+  </tile>
+  <tile id="1021">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0130.gif"/>
+  </tile>
+  <tile id="1022">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0131.gif"/>
+  </tile>
+  <tile id="1023">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0132.gif"/>
+  </tile>
+  <tile id="1024">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0133.gif"/>
+  </tile>
+  <tile id="1025">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0134.gif"/>
+  </tile>
+  <tile id="1026">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0135.gif"/>
+  </tile>
+  <tile id="1027">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0136.gif"/>
+  </tile>
+  <tile id="1028">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0137.gif"/>
+  </tile>
+  <tile id="1029">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0138.gif"/>
+  </tile>
+  <tile id="1030">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0139.gif"/>
+  </tile>
+  <tile id="1031">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0140.gif"/>
+  </tile>
+  <tile id="1032">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0141.gif"/>
+  </tile>
+  <tile id="1033">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0142.gif"/>
+  </tile>
+  <tile id="1034">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0143.gif"/>
+  </tile>
+  <tile id="1035">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0144.gif"/>
+  </tile>
+  <tile id="1036">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0145.gif"/>
+  </tile>
+  <tile id="1037">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0146.gif"/>
+  </tile>
+  <tile id="1038">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0147.gif"/>
+  </tile>
+  <tile id="1039">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0148.gif"/>
+  </tile>
+  <tile id="1040">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0149.gif"/>
+  </tile>
+  <tile id="1041">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0150.gif"/>
+  </tile>
+  <tile id="1042">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0151.gif"/>
+  </tile>
+  <tile id="1043">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0152.gif"/>
+  </tile>
+  <tile id="1044">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0153.gif"/>
+  </tile>
+  <tile id="1045">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0154.gif"/>
+  </tile>
+  <tile id="1046">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0155.gif"/>
+  </tile>
+  <tile id="1047">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0156.gif"/>
+  </tile>
+  <tile id="1048">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0157.gif"/>
+  </tile>
+  <tile id="1049">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0158.gif"/>
+  </tile>
+  <tile id="1050">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0159.gif"/>
+  </tile>
+  <tile id="1051">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0160.gif"/>
+  </tile>
+  <tile id="1052">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0161.gif"/>
+  </tile>
+  <tile id="1053">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0162.gif"/>
+  </tile>
+  <tile id="1054">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0163.gif"/>
+  </tile>
+  <tile id="1055">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0164.gif"/>
+  </tile>
+  <tile id="1056">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0165.gif"/>
+  </tile>
+  <tile id="1057">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0166.gif"/>
+  </tile>
+  <tile id="1058">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0167.gif"/>
+  </tile>
+  <tile id="1059">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0168.gif"/>
+  </tile>
+  <tile id="1060">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0169.gif"/>
+  </tile>
+  <tile id="1061">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0174.gif"/>
+  </tile>
+  <tile id="1062">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0175.gif"/>
+  </tile>
+  <tile id="1063">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0176.gif"/>
+  </tile>
+  <tile id="1064">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0177.gif"/>
+  </tile>
+  <tile id="1065">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0179.gif"/>
+  </tile>
+  <tile id="1066">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0180.gif"/>
+  </tile>
+  <tile id="1067">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0181.gif"/>
+  </tile>
+  <tile id="1068">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0182.gif"/>
+  </tile>
+  <tile id="1069">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0183.gif"/>
+  </tile>
+  <tile id="1070">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0184.gif"/>
+  </tile>
+  <tile id="1071">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0185.gif"/>
+  </tile>
+  <tile id="1072">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0186.gif"/>
+  </tile>
+  <tile id="1073">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0187.gif"/>
+  </tile>
+  <tile id="1074">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0188.gif"/>
+  </tile>
+  <tile id="1075">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0189.gif"/>
+  </tile>
+  <tile id="1076">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0190.gif"/>
+  </tile>
+  <tile id="1077">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0191.gif"/>
+  </tile>
+  <tile id="1078">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0192.gif"/>
+  </tile>
+  <tile id="1079">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0193.gif"/>
+  </tile>
+  <tile id="1080">
+   <image width="82" height="104" source="simerion/images/#tiles#world#decor#0194.gif"/>
+  </tile>
+  <tile id="1081">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0195.gif"/>
+  </tile>
+  <tile id="1082">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0196.gif"/>
+  </tile>
+  <tile id="1083">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0197.gif"/>
+  </tile>
+  <tile id="1084">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0198.gif"/>
+  </tile>
+  <tile id="1085">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0199.gif"/>
+  </tile>
+  <tile id="1086">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0200.gif"/>
+  </tile>
+  <tile id="1087">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0201.gif"/>
+  </tile>
+  <tile id="1088">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0202.gif"/>
+  </tile>
+  <tile id="1089">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0203.gif"/>
+  </tile>
+  <tile id="1090">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0204.gif"/>
+  </tile>
+  <tile id="1091">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0205.gif"/>
+  </tile>
+  <tile id="1092">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0206.gif"/>
+  </tile>
+  <tile id="1093">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0207.gif"/>
+  </tile>
+  <tile id="1094">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0208.gif"/>
+  </tile>
+  <tile id="1095">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0209.gif"/>
+  </tile>
+  <tile id="1096">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0210.gif"/>
+  </tile>
+  <tile id="1097">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0211.gif"/>
+  </tile>
+  <tile id="1098">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0212.gif"/>
+  </tile>
+  <tile id="1099">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0213.gif"/>
+  </tile>
+  <tile id="1100">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0214.gif"/>
+  </tile>
+  <tile id="1101">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0215.gif"/>
+  </tile>
+  <tile id="1102">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0216.gif"/>
+  </tile>
+  <tile id="1103">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0217.gif"/>
+  </tile>
+  <tile id="1104">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0218.gif"/>
+  </tile>
+  <tile id="1105">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0219.gif"/>
+  </tile>
+  <tile id="1106">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0220.gif"/>
+  </tile>
+  <tile id="1107">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0221.gif"/>
+  </tile>
+  <tile id="1108">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0222.gif"/>
+  </tile>
+  <tile id="1109">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0223.gif"/>
+  </tile>
+  <tile id="1110">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0224.gif"/>
+  </tile>
+  <tile id="1111">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0225.gif"/>
+  </tile>
+  <tile id="1112">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0226.gif"/>
+  </tile>
+  <tile id="1113">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0227.gif"/>
+  </tile>
+  <tile id="1114">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0228.gif"/>
+  </tile>
+  <tile id="1115">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0229.gif"/>
+  </tile>
+  <tile id="1116">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0230.gif"/>
+  </tile>
+  <tile id="1117">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0231.gif"/>
+  </tile>
+  <tile id="1118">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0232.gif"/>
+  </tile>
+  <tile id="1119">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0233.gif"/>
+  </tile>
+  <tile id="1120">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0234.gif"/>
+  </tile>
+  <tile id="1121">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0235.gif"/>
+  </tile>
+  <tile id="1122">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0236.gif"/>
+  </tile>
+  <tile id="1123">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0237.gif"/>
+  </tile>
+  <tile id="1124">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0238.gif"/>
+  </tile>
+  <tile id="1125">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0239.gif"/>
+  </tile>
+  <tile id="1126">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0240.gif"/>
+  </tile>
+  <tile id="1127">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0241.gif"/>
+  </tile>
+  <tile id="1128">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0242.gif"/>
+  </tile>
+  <tile id="1129">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0243.gif"/>
+  </tile>
+  <tile id="1130">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0244.gif"/>
+  </tile>
+  <tile id="1131">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0245.gif"/>
+  </tile>
+  <tile id="1132">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0246.gif"/>
+  </tile>
+  <tile id="1133">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0247.gif"/>
+  </tile>
+  <tile id="1134">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0248.gif"/>
+  </tile>
+  <tile id="1135">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0249.gif"/>
+  </tile>
+  <tile id="1136">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0250.gif"/>
+  </tile>
+  <tile id="1137">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0251.gif"/>
+  </tile>
+  <tile id="1138">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0252.gif"/>
+  </tile>
+  <tile id="1139">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0253.gif"/>
+  </tile>
+  <tile id="1140">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0254.gif"/>
+  </tile>
+  <tile id="1141">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0255.gif"/>
+  </tile>
+  <tile id="1142">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0256.gif"/>
+  </tile>
+  <tile id="1143">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0257.gif"/>
+  </tile>
+  <tile id="1144">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0258.gif"/>
+  </tile>
+  <tile id="1145">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0259.gif"/>
+  </tile>
+  <tile id="1146">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0260.gif"/>
+  </tile>
+  <tile id="1147">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0261.gif"/>
+  </tile>
+  <tile id="1148">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0262.gif"/>
+  </tile>
+  <tile id="1149">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0263.gif"/>
+  </tile>
+  <tile id="1150">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0264.gif"/>
+  </tile>
+  <tile id="1151">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0265.gif"/>
+  </tile>
+  <tile id="1152">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0266.gif"/>
+  </tile>
+  <tile id="1153">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0267.gif"/>
+  </tile>
+  <tile id="1154">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0268.gif"/>
+  </tile>
+  <tile id="1155">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0269.gif"/>
+  </tile>
+  <tile id="1156">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0270.gif"/>
+  </tile>
+  <tile id="1157">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0271.gif"/>
+  </tile>
+  <tile id="1158">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0272.gif"/>
+  </tile>
+  <tile id="1159">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0273.gif"/>
+  </tile>
+  <tile id="1160">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0274.gif"/>
+  </tile>
+  <tile id="1161">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0275.gif"/>
+  </tile>
+  <tile id="1162">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0276.gif"/>
+  </tile>
+  <tile id="1163">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0277.gif"/>
+  </tile>
+  <tile id="1164">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0278.gif"/>
+  </tile>
+  <tile id="1165">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0279.gif"/>
+  </tile>
+  <tile id="1166">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0280.gif"/>
+  </tile>
+  <tile id="1167">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0281.gif"/>
+  </tile>
+  <tile id="1168">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0282.gif"/>
+  </tile>
+  <tile id="1169">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0283.gif"/>
+  </tile>
+  <tile id="1170">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0284.gif"/>
+  </tile>
+  <tile id="1171">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0285.gif"/>
+  </tile>
+  <tile id="1172">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0286.gif"/>
+  </tile>
+  <tile id="1173">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0287.gif"/>
+  </tile>
+  <tile id="1174">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0288.gif"/>
+  </tile>
+  <tile id="1175">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0289.gif"/>
+  </tile>
+  <tile id="1176">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0290.gif"/>
+  </tile>
+  <tile id="1177">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0291.gif"/>
+  </tile>
+  <tile id="1178">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0292.gif"/>
+  </tile>
+  <tile id="1179">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0293.gif"/>
+  </tile>
+  <tile id="1180">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0294.gif"/>
+  </tile>
+  <tile id="1181">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0295.gif"/>
+  </tile>
+  <tile id="1182">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0296.gif"/>
+  </tile>
+  <tile id="1183">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0297.gif"/>
+  </tile>
+  <tile id="1184">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0298.gif"/>
+  </tile>
+  <tile id="1185">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0299.gif"/>
+  </tile>
+  <tile id="1186">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0300.gif"/>
+  </tile>
+  <tile id="1187">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0301.gif"/>
+  </tile>
+  <tile id="1188">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0302.gif"/>
+  </tile>
+  <tile id="1189">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0303.gif"/>
+  </tile>
+  <tile id="1190">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0304.gif"/>
+  </tile>
+  <tile id="1191">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0305.gif"/>
+  </tile>
+  <tile id="1192">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0306.gif"/>
+  </tile>
+  <tile id="1193">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0307.gif"/>
+  </tile>
+  <tile id="1194">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0308.gif"/>
+  </tile>
+  <tile id="1195">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0309.gif"/>
+  </tile>
+  <tile id="1196">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0310.gif"/>
+  </tile>
+  <tile id="1197">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0311.gif"/>
+  </tile>
+  <tile id="1198">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0312.gif"/>
+  </tile>
+  <tile id="1199">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0313.gif"/>
+  </tile>
+  <tile id="1200">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0314.gif"/>
+  </tile>
+  <tile id="1201">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0315.gif"/>
+  </tile>
+  <tile id="1202">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0316.gif"/>
+  </tile>
+  <tile id="1203">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0317.gif"/>
+  </tile>
+  <tile id="1204">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0318.gif"/>
+  </tile>
+  <tile id="1205">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0319.gif"/>
+  </tile>
+  <tile id="1206">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0320.gif"/>
+  </tile>
+  <tile id="1207">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0321.gif"/>
+  </tile>
+  <tile id="1208">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0322.gif"/>
+  </tile>
+  <tile id="1209">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0323.gif"/>
+  </tile>
+  <tile id="1210">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0324.gif"/>
+  </tile>
+  <tile id="1211">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0325.gif"/>
+  </tile>
+  <tile id="1212">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0326.gif"/>
+  </tile>
+  <tile id="1213">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0327.gif"/>
+  </tile>
+  <tile id="1214">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0328.gif"/>
+  </tile>
+  <tile id="1215">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0329.gif"/>
+  </tile>
+  <tile id="1216">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0330.gif"/>
+  </tile>
+  <tile id="1217">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0331.gif"/>
+  </tile>
+  <tile id="1218">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0332.gif"/>
+  </tile>
+  <tile id="1219">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0333.gif"/>
+  </tile>
+  <tile id="1220">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0334.gif"/>
+  </tile>
+  <tile id="1221">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0335.gif"/>
+  </tile>
+  <tile id="1222">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0336.gif"/>
+  </tile>
+  <tile id="1223">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0337.gif"/>
+  </tile>
+  <tile id="1224">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0338.gif"/>
+  </tile>
+  <tile id="1225">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0339.gif"/>
+  </tile>
+  <tile id="1226">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0340.gif"/>
+  </tile>
+  <tile id="1227">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0341.gif"/>
+  </tile>
+  <tile id="1228">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0342.gif"/>
+  </tile>
+  <tile id="1229">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0343.gif"/>
+  </tile>
+  <tile id="1230">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0344.gif"/>
+  </tile>
+  <tile id="1231">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0345.gif"/>
+  </tile>
+  <tile id="1232">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0346.gif"/>
+  </tile>
+  <tile id="1233">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0347.gif"/>
+  </tile>
+  <tile id="1234">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0348.gif"/>
+  </tile>
+  <tile id="1235">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0349.gif"/>
+  </tile>
+  <tile id="1236">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0350.gif"/>
+  </tile>
+  <tile id="1237">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0351.gif"/>
+  </tile>
+  <tile id="1238">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0352.gif"/>
+  </tile>
+  <tile id="1239">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0353.gif"/>
+  </tile>
+  <tile id="1240">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0354.gif"/>
+  </tile>
+  <tile id="1241">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0355.gif"/>
+  </tile>
+  <tile id="1242">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0356.gif"/>
+  </tile>
+  <tile id="1243">
+   <image width="82" height="82" source="simerion/images/#tiles#world#decor#0357.gif"/>
+  </tile>
+  <tile id="1244">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0000.gif"/>
+  </tile>
+  <tile id="1245">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0001.gif"/>
+  </tile>
+  <tile id="1246">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0002.gif"/>
+  </tile>
+  <tile id="1247">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0003.gif"/>
+  </tile>
+  <tile id="1248">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0004.gif"/>
+  </tile>
+  <tile id="1249">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0005.gif"/>
+  </tile>
+  <tile id="1250">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0006.gif"/>
+  </tile>
+  <tile id="1251">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0007.gif"/>
+  </tile>
+  <tile id="1252">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0008.gif"/>
+  </tile>
+  <tile id="1253">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0009.gif"/>
+  </tile>
+  <tile id="1254">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0010.gif"/>
+  </tile>
+  <tile id="1255">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0011.gif"/>
+  </tile>
+  <tile id="1256">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0012.gif"/>
+  </tile>
+  <tile id="1257">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0013.gif"/>
+  </tile>
+  <tile id="1258">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0014.gif"/>
+  </tile>
+  <tile id="1259">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0015.gif"/>
+  </tile>
+  <tile id="1260">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0016.gif"/>
+  </tile>
+  <tile id="1261">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0017.gif"/>
+  </tile>
+  <tile id="1262">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0018.gif"/>
+  </tile>
+  <tile id="1263">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0019.gif"/>
+  </tile>
+  <tile id="1264">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0020.gif"/>
+  </tile>
+  <tile id="1265">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0021.gif"/>
+  </tile>
+  <tile id="1266">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0022.gif"/>
+  </tile>
+  <tile id="1267">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0023.gif"/>
+  </tile>
+  <tile id="1268">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0024.gif"/>
+  </tile>
+  <tile id="1269">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0025.gif"/>
+  </tile>
+  <tile id="1270">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0026.gif"/>
+  </tile>
+  <tile id="1271">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0027.gif"/>
+  </tile>
+  <tile id="1272">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0028.gif"/>
+  </tile>
+  <tile id="1273">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0029.gif"/>
+  </tile>
+  <tile id="1274">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0030.gif"/>
+  </tile>
+  <tile id="1275">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0031.gif"/>
+  </tile>
+  <tile id="1276">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0032.gif"/>
+  </tile>
+  <tile id="1277">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0033.gif"/>
+  </tile>
+  <tile id="1278">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0034.gif"/>
+  </tile>
+  <tile id="1279">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0035.gif"/>
+  </tile>
+  <tile id="1280">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0036.gif"/>
+  </tile>
+  <tile id="1281">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0037.gif"/>
+  </tile>
+  <tile id="1282">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0038.gif"/>
+  </tile>
+  <tile id="1283">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0039.gif"/>
+  </tile>
+  <tile id="1284">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0040.gif"/>
+  </tile>
+  <tile id="1285">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0041.gif"/>
+  </tile>
+  <tile id="1286">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0042.gif"/>
+  </tile>
+  <tile id="1287">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0043.gif"/>
+  </tile>
+  <tile id="1288">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0044.gif"/>
+  </tile>
+  <tile id="1289">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0045.gif"/>
+  </tile>
+  <tile id="1290">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0046.gif"/>
+  </tile>
+  <tile id="1291">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0047.gif"/>
+  </tile>
+  <tile id="1292">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0048.gif"/>
+  </tile>
+  <tile id="1293">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0049.gif"/>
+  </tile>
+  <tile id="1294">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0050.gif"/>
+  </tile>
+  <tile id="1295">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0051.gif"/>
+  </tile>
+  <tile id="1296">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0052.gif"/>
+  </tile>
+  <tile id="1297">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0053.gif"/>
+  </tile>
+  <tile id="1298">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0054.gif"/>
+  </tile>
+  <tile id="1299">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0055.gif"/>
+  </tile>
+  <tile id="1300">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0056.gif"/>
+  </tile>
+  <tile id="1301">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0057.gif"/>
+  </tile>
+  <tile id="1302">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0058.gif"/>
+  </tile>
+  <tile id="1303">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0059.gif"/>
+  </tile>
+  <tile id="1304">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0060.gif"/>
+  </tile>
+  <tile id="1305">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0061.gif"/>
+  </tile>
+  <tile id="1306">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0062.gif"/>
+  </tile>
+  <tile id="1307">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0063.gif"/>
+  </tile>
+  <tile id="1308">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0064.gif"/>
+  </tile>
+  <tile id="1309">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0065.gif"/>
+  </tile>
+  <tile id="1310">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0066.gif"/>
+  </tile>
+  <tile id="1311">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0067.gif"/>
+  </tile>
+  <tile id="1312">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0068.gif"/>
+  </tile>
+  <tile id="1313">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0069.gif"/>
+  </tile>
+  <tile id="1314">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0070.gif"/>
+  </tile>
+  <tile id="1315">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0071.gif"/>
+  </tile>
+  <tile id="1316">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0072.gif"/>
+  </tile>
+  <tile id="1317">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0073.gif"/>
+  </tile>
+  <tile id="1318">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0074.gif"/>
+  </tile>
+  <tile id="1319">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0075.gif"/>
+  </tile>
+  <tile id="1320">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0076.gif"/>
+  </tile>
+  <tile id="1321">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0077.gif"/>
+  </tile>
+  <tile id="1322">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0078.gif"/>
+  </tile>
+  <tile id="1323">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0079.gif"/>
+  </tile>
+  <tile id="1324">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0080.gif"/>
+  </tile>
+  <tile id="1325">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0081.gif"/>
+  </tile>
+  <tile id="1326">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0082.gif"/>
+  </tile>
+  <tile id="1327">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0083.gif"/>
+  </tile>
+  <tile id="1328">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0084.gif"/>
+  </tile>
+  <tile id="1329">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0085.gif"/>
+  </tile>
+  <tile id="1330">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0086.gif"/>
+  </tile>
+  <tile id="1331">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0087.gif"/>
+  </tile>
+  <tile id="1332">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0088.gif"/>
+  </tile>
+  <tile id="1333">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0089.gif"/>
+  </tile>
+  <tile id="1334">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0090.gif"/>
+  </tile>
+  <tile id="1335">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0091.gif"/>
+  </tile>
+  <tile id="1336">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0092.gif"/>
+  </tile>
+  <tile id="1337">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0093.gif"/>
+  </tile>
+  <tile id="1338">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0094.gif"/>
+  </tile>
+  <tile id="1339">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0095.gif"/>
+  </tile>
+  <tile id="1340">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0096.gif"/>
+  </tile>
+  <tile id="1341">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0097.gif"/>
+  </tile>
+  <tile id="1342">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0098.gif"/>
+  </tile>
+  <tile id="1343">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0099.gif"/>
+  </tile>
+  <tile id="1344">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0100.gif"/>
+  </tile>
+  <tile id="1345">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0101.gif"/>
+  </tile>
+  <tile id="1346">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0102.gif"/>
+  </tile>
+  <tile id="1347">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0103.gif"/>
+  </tile>
+  <tile id="1348">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0104.gif"/>
+  </tile>
+  <tile id="1349">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0105.gif"/>
+  </tile>
+  <tile id="1350">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0106.gif"/>
+  </tile>
+  <tile id="1351">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0107.gif"/>
+  </tile>
+  <tile id="1352">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0108.gif"/>
+  </tile>
+  <tile id="1353">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0109.gif"/>
+  </tile>
+  <tile id="1354">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0110.gif"/>
+  </tile>
+  <tile id="1355">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0111.gif"/>
+  </tile>
+  <tile id="1356">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0112.gif"/>
+  </tile>
+  <tile id="1357">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0113.gif"/>
+  </tile>
+  <tile id="1358">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0114.gif"/>
+  </tile>
+  <tile id="1359">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0115.gif"/>
+  </tile>
+  <tile id="1360">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0116.gif"/>
+  </tile>
+  <tile id="1361">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0117.gif"/>
+  </tile>
+  <tile id="1362">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0118.gif"/>
+  </tile>
+  <tile id="1363">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0119.gif"/>
+  </tile>
+  <tile id="1364">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0120.gif"/>
+  </tile>
+  <tile id="1365">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0121.gif"/>
+  </tile>
+  <tile id="1366">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0122.gif"/>
+  </tile>
+  <tile id="1367">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0123.gif"/>
+  </tile>
+  <tile id="1368">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0124.gif"/>
+  </tile>
+  <tile id="1369">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0125.gif"/>
+  </tile>
+  <tile id="1370">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0126.gif"/>
+  </tile>
+  <tile id="1371">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0127.gif"/>
+  </tile>
+  <tile id="1372">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0128.gif"/>
+  </tile>
+  <tile id="1373">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0129.gif"/>
+  </tile>
+  <tile id="1374">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0130.gif"/>
+  </tile>
+  <tile id="1375">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0131.gif"/>
+  </tile>
+  <tile id="1376">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0132.gif"/>
+  </tile>
+  <tile id="1377">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0133.gif"/>
+  </tile>
+  <tile id="1378">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0134.gif"/>
+  </tile>
+  <tile id="1379">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0135.gif"/>
+  </tile>
+  <tile id="1380">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0136.gif"/>
+  </tile>
+  <tile id="1381">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0137.gif"/>
+  </tile>
+  <tile id="1382">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0138.gif"/>
+  </tile>
+  <tile id="1383">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0139.gif"/>
+  </tile>
+  <tile id="1384">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0140.gif"/>
+  </tile>
+  <tile id="1385">
+   <image width="82" height="82" source="simerion/images/#tiles#world#ground#0141.gif"/>
+  </tile>
+ </tileset>
+ <layer name="bg" width="15" height="30">
+  <data encoding="csv">
+1246,1246,1246,1246,1246,1246,1246,1246,1246,1246,1246,1246,1246,1246,1246,
+1246,1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1246,
+1246,1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,
+1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,1246,
+1246,1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,
+1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,1246,
+1246,1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,
+1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,1246,
+1246,1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,
+1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,1246,
+1246,1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,
+1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,1246,
+1246,1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,
+1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,1246,
+1246,1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,
+1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,1246,
+1246,1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,
+1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,1246,
+1246,1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,
+1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,1246,
+1246,1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,
+1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,1345,1345,
+1246,1246,1246,1246,1246,1246,1246,1345,1345,1246,1246,1345,1345,1345,1345,
+1246,1246,1246,1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,
+1246,1246,1246,1246,1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,
+1246,1246,1246,1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,
+1246,1246,1246,1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,
+1246,1246,1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,
+1246,1246,1246,1246,1246,1246,1246,1246,1345,1345,1345,1345,1345,1345,1345,
+1246,1246,1246,1246,1246,1246,1246,1246,1246,1246,1246,1246,1246,1246,1246
+</data>
+ </layer>
+ <layer name="obstacles" width="15" height="30">
+  <data encoding="csv">
+974,974,974,974,974,974,974,974,974,974,974,974,974,974,974,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,974,
+974,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,903,0,0,0,0,0,0,0,0,0,0,974,
+974,0,0,0,0,0,0,0,0,0,0,0,736,0,0,
+0,0,0,0,0,0,0,0,0,0,0,738,737,0,974,
+974,0,0,0,0,0,0,0,0,0,0,0,739,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,974,
+974,0,0,0,0,0,0,774,773,779,748,0,0,0,0,
+0,0,0,0,0,0,0,775,0,0,749,0,0,0,974,
+974,0,0,0,907,0,0,0,0,0,0,774,0,0,0,
+0,0,0,906,0,0,0,0,0,0,0,775,0,0,974,
+974,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,759,0,0,0,0,974,
+974,0,0,0,0,0,0,0,0,0,760,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,974,
+974,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,720,0,0,0,0,0,974,
+974,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,974,
+974,0,917,917,0,0,0,0,0,0,721,0,0,0,0,
+0,919,946,920,0,0,0,0,0,726,722,0,0,0,974,
+974,0,925,946,0,0,0,0,0,0,0,723,0,0,0,
+0,919,945,920,0,0,0,0,0,0,0,724,0,0,974,
+974,0,918,918,0,0,0,0,0,0,0,0,725,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,974,
+974,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,974,
+974,0,0,0,974,0,0,0,974,0,0,0,0,0,0,
+974,974,974,974,974,974,974,974,974,974,974,974,974,974,974
+</data>
+ </layer>
+</map>

@@ -1,0 +1,21 @@
+<launch>
+<!-- Driver for the joystick. -->
+<node pkg="joy" type="joy_node" name="joy" output="screen" >
+  <param name="dev" value="/dev/input/js1" />
+  <param name="autorepeat_rate" value="25" />
+</node>
+
+<!-- http://wiki.ros.org/teleop_twist_joy -->
+<node pkg="teleop_twist_joy" type="teleop_node" name="teleop_node" output="screen" >
+  <param name="enable_button" value="6"/> <!-- "7" -->
+  <param name="axis_angular" value="0"/>
+  <param name="axis_linear" value="3"/>
+    <param name="scale_angular" value="200"/>
+    <param name="scale_linear" value="300"/>
+</node>
+
+<node pkg="ros_micro_machines" type="game.exe" name="game"
+      output="screen" required="true" />
+<node pkg="ros_micro_machines" type="wheel.exe" name="wheel"
+      output="screen" required="true" />
+</launch>

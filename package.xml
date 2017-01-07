@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- doc: http://wiki.ros.org/catkin/package.xml -->
+<package format="2">
+  <name>rostiled</name>
+  <version>0.0.0</version>
+  <description>
+    A clone of MicroMachines to use within ROS.
+  </description>
+  <maintainer email="arnaud.a.ramey@gmail.com">Arnaud Ramey</maintainer>
+  <license>LGPLv3</license>
+  <!-- dependencies -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <!-- ROS -->
+  <depend>roscpp</depend>
+  <depend>roslib</depend>
+  <depend>std_msgs</depend>
+
+  <export>
+    <rosdoc config="rosdoc.yaml" /> <!-- http://wiki.ros.org/rosdoc_lite -->
+  </export>
+</package>

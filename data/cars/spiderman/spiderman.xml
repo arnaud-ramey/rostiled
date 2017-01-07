@@ -1,0 +1,10 @@
+<car scale=".1">
+  <view file="-135.png" angle="-135" centerx="324" centery="332"/>
+  <view file="-90.png"  angle="-90"  centerx="176" centery="333"/>
+  <view file="-45.png"  angle="-45"  centerx="351" centery="327"/>
+  <view file="0.png"    angle="0"    centerx="385" centery="175"/>
+  <view file="45.png"   angle="45"   centerx="378" centery="239"/>
+  <view file="90.png"   angle="90"   centerx="178" centery="303"/>
+  <view file="135.png"  angle="135"  centerx="306" centery="240"/>
+  <view file="180.png"  angle="180"  centerx="370" centery="187"/>
+</car>
