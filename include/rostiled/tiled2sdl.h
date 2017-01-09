@@ -37,169 +37,196 @@ ________________________________________________________________________________
 // http://stackoverflow.com/questions/37907758/how-to-avoid-the-need-to-specify-deleter-for-stdshared-ptr-every-time-its-con
 typedef boost::shared_ptr<SDL_Texture> SDL_TexturePtr;
 
-class Movable {
-public:
-  Movable() : _maxspeed(1), _xortho(0), _yortho(0), _angle(0), _xspeed(0), _yspeed(0),
-    _ntextures(0) {}
-
-  bool create(SDL_Renderer* renderer,
-              const std::string & xml_file,
-              double maxspeed = 1,
-              double xortho = 0, double yortho = 0, double angle = 0) {
-    if (!renderer) {
-      printf("Movable::create(): empty renderer!\n");
-      return false;
-    }
-    _maxspeed = maxspeed;
-    _xortho = xortho;
-    _yortho = yortho;
-    _angle = angle;
-    /*parse the file and get the DOM */
-    std::string folder_name = extract_folder_from_full_path(xml_file);
-    xmlDoc *doc = xmlReadFile(xml_file.c_str(), NULL, 0);
-    if (doc == NULL){
-      printf("error: could not parse file %s\n", xml_file.c_str());
-      return false;
-    }
-    xmlNode* root_element = xmlDocGetRootElement(doc);
-    double scale = atof((char*) xmlGetProp(root_element, (xmlChar*) "scale"));
-    printf("Scale:%g\n", scale);
-    xmlNode* cur = root_element->xmlChildrenNode;
-    while (cur != NULL) {
-      if (!xmlStrEqual(cur->name, (xmlChar*) "view")) {
-        cur = cur->next;
-        continue;
-      }
-      std::string filename = folder_name + (char*) xmlGetProp(cur, (xmlChar*) "file");
-      double angle = atof((char*) xmlGetProp(cur, (xmlChar*) "angle")) * DEG2RAD;
-      SDL_Point center;
-      center.x = scale * atoi((char*) xmlGetProp(cur, (xmlChar*) "centerx"));
-      center.y = scale * atoi((char*) xmlGetProp(cur, (xmlChar*) "centery"));
-      SDL_Surface* surf = IMG_Load(filename.c_str());
-      if (!surf) {
-        printf("Could not load surface '%s', %g\n", filename.c_str(), angle);
-        return false;
-      }
-      SDL_Surface* surf_scaled = ScaleSurface(surf, scale*surf->w, scale*surf->h);
-      //printf("surf_scaled:(%i, %i)\n", surf_scaled->w, surf_scaled->h);
-
-      SDL_TexturePtr tex (SDL_CreateTextureFromSurface( renderer, surf_scaled ),
-                          SDL_DestroyTexture);
-      if (!tex) {
-        printf("Could not load texture '%s', %g\n", filename.c_str(), angle);
-        return false;
-      }
-      SDL_Rect size;
-      size.x = size.y = 0;
-      if (SDL_QueryTexture(tex.get(), NULL, NULL, &(size.w), &(size.h)) != 0) {
-        printf("SDL_QueryTexture() returned an error '%s'\n", SDL_GetError());
-        return false;
-      }
-      printf("Adding '%s', angle:%g°, center:(%i, %i), size:(%i, %i)\n",
-             filename.c_str(), angle * RAD2DEG, center.x, center.y, size.w, size.h);
-      if (!size.w || !size.h) {
-        printf("the texture obtained by SDL_CreateTextureFromSurface() is empty!\n");
-        return false;
-      }
-      _textures.push_back(tex);
-      _sizes.push_back(size);
-      _angles.push_back(angle);
-      _cosangles.push_back(cos(angle));
-      _sinangles.push_back(sin(angle));
-      _centers.push_back(center);
-      cur = cur->next;
-      // clean
-      SDL_FreeSurface( surf );
-      SDL_FreeSurface( surf_scaled );
-    } // end while (cur)
-    _ntextures = _textures.size();
-    xmlFreeDoc(doc);
-    return true;
-  } // end ctor
-
-  void advance(const double & dist) {
-    _xortho += cos(-_angle) * dist;
-    _yortho += sin(-_angle) * dist;
-  }
-
-  bool update(tmx_map* map, tmx_layer* obstacle_layer,
-              const std::vector<bool> & diamond_hittest) {
-    Timer::Time time = _update_timer.getTimeSeconds();
-    _update_timer.reset();
-    double currspeed = hypot(_xspeed, _yspeed);
-    // rotate towards speed direction
-    if (currspeed > 1E-2)
-      _angle = atan2(_yspeed, _xspeed);
-    // normalize speed if going too fast
-    if (currspeed > _maxspeed) {
-      //_xspeed = cos(_angle) * _maxspeed;
-      //_yspeed = sin(_angle) * _maxspeed;
-    }
-    double newx = _xortho + time * _xspeed;
-    double newy = _yortho + time * _yspeed;
-    // check if there is a collision - note the conversion to isometric
-    if (point_in_layer_staggered(map, obstacle_layer, newx, newy/2, diamond_hittest)) {
-      //printf("Collision detected, not moving.\n");
-    }
-    else {
-      _xortho = newx;
-      _yortho = newy;
-    }
-    return true;
-  }
-
-  bool render(SDL_Renderer* renderer) {
-    // find best texture
-    if (!_ntextures ||  _ntextures != _angles.size()) {
-      printf("Car::render(): there is no texture, or their size doesn't match with angles!\n");
-      return false;
-    }
-    unsigned int best_idx = 0;
-    double best_dist = 1E6, cosa = cos(_angle), sina = -sin(_angle);
-    for (unsigned int i = 0; i < _ntextures; ++i) {
-      double dist = fabs(_cosangles[i] - cosa) + fabs(_sinangles[i] - sina);
-      if (best_dist > dist) {
-        //printf("New best diff:%i, %g\n", i, dist);
-        best_idx = i;
-        best_dist = dist;
-      }
-    } // end for i
-    // render it
-    SDL_TexturePtr tex = _textures[best_idx];
-    SDL_Rect srcrect = _sizes[best_idx], dstrect = _sizes[best_idx];
-    dstrect.x = _xortho - _centers[best_idx].x;
-    dstrect.y = _yortho / 2 - _centers[best_idx].y; // conversion to isometric
-    //  printf("Car::render(%g, %g, angle:%g°)-->tex #%i/%i, size:(%i, %i), "
-    //         "srcrect:%s, dstrect:%s\n",
-    //         _xortho, _yortho, _angle * RAD2DEG, best_idx, _ntextures,
-    //         _sizes[best_idx].w, _sizes[best_idx].h,
-    //         rect2str(srcrect).c_str(), rect2str(dstrect).c_str());
-    if (SDL_RenderCopy(renderer, tex.get(), &srcrect, &dstrect) < 0) {
-      printf("movable:SDL_RenderCopy returned an error '%s'!\n", SDL_GetError());
-      return false;
-    }
-    return true;
-  }
-
-  Timer _update_timer;
-  double _maxspeed;
-  double _xortho, _yortho, _angle, _xspeed, _yspeed;
-  std::vector< SDL_TexturePtr > _textures;
-  unsigned int _ntextures;
-  std::vector<double> _angles, _cosangles, _sinangles;
-  std::vector<SDL_Point> _centers;
-  std::vector<SDL_Rect> _sizes;
-}; // end class Car
-
-////////////////////////////////////////////////////////////////////////////////
-
 SDL_Renderer* renderer_ptr = NULL;
 static void* sdl_img_loader(const char *path) {
   return IMG_LoadTexture(renderer_ptr, path);
 }
 
+template<class _T>
+_T safe_get_prop(const xmlNode *node,
+                 const std::string & name,
+                 _T default_val) {
+  if (!xmlHasProp(node, (xmlChar*) name.c_str()))
+    return default_val;
+  std::string retval_str = (char*) xmlGetProp(node, (xmlChar*) name.c_str());
+  // cast from string
+  std::istringstream myStream(retval_str);
+  _T ans;
+  return (myStream >> ans ? ans : default_val);
+
+}
+
 class MapRenderer {
 public:
+  class Movable {
+  public:
+    Movable() : _maxspeed(1), _xortho(0), _yortho(0), _angle(0),
+      _xspeed(0), _yspeed(0), _angspeed(0),
+      _ntextures(0) {}
+
+    bool create(SDL_Renderer* renderer,
+                const std::string & xml_file,
+                double maxspeed = 1,
+                double xortho = 0, double yortho = 0, double angle = 0) {
+      if (!renderer) {
+        printf("Movable::create(): empty renderer!\n");
+        return false;
+      }
+      _maxspeed = maxspeed;
+      _xortho = xortho;
+      _yortho = yortho;
+      _angle = angle;
+      /*parse the file and get the DOM */
+      std::string folder_name = extract_folder_from_full_path(xml_file);
+      xmlDoc *doc = xmlReadFile(xml_file.c_str(), NULL, 0);
+      if (doc == NULL){
+        printf("error: could not parse file %s\n", xml_file.c_str());
+        return false;
+      }
+      xmlNode* root_element = xmlDocGetRootElement(doc);
+      double scale = safe_get_prop(root_element, "scale", 1.);
+      printf("Scale:%g\n", scale);
+      xmlNode* cur = root_element->xmlChildrenNode;
+      while (cur != NULL) {
+        if (!xmlStrEqual(cur->name, (xmlChar*) "view")) {
+          cur = cur->next;
+          continue;
+        }
+        std::string filename = folder_name + (char*) xmlGetProp(cur, (xmlChar*) "file");
+        bool flip = safe_get_prop(cur, "flip", false);
+        double angle = safe_get_prop(cur, "angle", 0.) * DEG2RAD;
+        SDL_Point center;
+        center.x = scale * safe_get_prop(cur, "centerx", 0);
+        center.y = scale * safe_get_prop(cur, "centery", 0);
+        SDL_Surface* surf = IMG_Load(filename.c_str());
+        if (!surf) {
+          printf("Could not load surface '%s', %g\n", filename.c_str(), angle);
+          return false;
+        }
+        SDL_Surface* surf_scaled = ScaleSurface(surf, scale*surf->w, scale*surf->h),
+            *surf_flipped = NULL, *goodsurf = surf_scaled;
+        //printf("surf_scaled:(%i, %i)\n", surf_scaled->w, surf_scaled->h);
+        if (flip) {
+          surf_flipped = FlipSurface(surf_scaled);
+          center.x = surf_scaled->w - center.x; // flip center too!
+          goodsurf = surf_flipped;
+        }
+
+        SDL_TexturePtr tex (SDL_CreateTextureFromSurface( renderer, goodsurf ),
+                            SDL_DestroyTexture);
+        if (!tex) {
+          printf("Could not load texture '%s', %g\n", filename.c_str(), angle);
+          return false;
+        }
+        SDL_Rect size;
+        size.x = size.y = 0;
+        if (SDL_QueryTexture(tex.get(), NULL, NULL, &(size.w), &(size.h)) != 0) {
+          printf("SDL_QueryTexture() returned an error '%s'\n", SDL_GetError());
+          return false;
+        }
+        printf("Adding '%s', angle:%g°, center:(%i, %i), size:(%i, %i)\n",
+               filename.c_str(), angle * RAD2DEG, center.x, center.y, size.w, size.h);
+        if (!size.w || !size.h) {
+          printf("the texture obtained by SDL_CreateTextureFromSurface() is empty!\n");
+          return false;
+        }
+        _textures.push_back(tex);
+        _sizes.push_back(size);
+        _angles.push_back(angle);
+        _cosangles.push_back(cos(angle));
+        _sinangles.push_back(sin(angle));
+        _centers.push_back(center);
+        cur = cur->next;
+        // clean
+        SDL_FreeSurface( surf );
+        SDL_FreeSurface( surf_scaled );
+        if (surf_flipped)
+          SDL_FreeSurface( surf_flipped );
+      } // end while (cur)
+      _ntextures = _textures.size();
+      xmlFreeDoc(doc);
+      return true;
+    } // end ctor
+
+    void advance(const double & dist) {
+      _xortho += cos(-_angle) * dist;
+      _yortho += sin(-_angle) * dist;
+    }
+
+    void set_speeds(const double & v, const double & w) {
+      _xspeed = cos(_angle) * v;
+      _yspeed = sin(_angle) * v;
+      _angspeed = w;
+    }
+
+    bool update(MapRenderer & map) {
+      Timer::Time time = _update_timer.getTimeSeconds();
+      _update_timer.reset();
+      // handle xspeed, yspeed
+      double currspeed = hypot(_xspeed, _yspeed);
+      // rotate towards speed direction
+      if (currspeed > 5)
+        _angle = atan2(_yspeed, _xspeed);
+      double newx = _xortho + time * _xspeed;
+      double newy = _yortho + time * _yspeed;
+      _angle += time * _angspeed;
+      // check if there is a collision - note the conversion to isometric
+      if (map.is_in_ostacles(newx, newy/2)) {
+        //printf("Collision detected, not moving.\n");
+      }
+      else {
+        _xortho = newx;
+        _yortho = newy;
+      }
+      return true;
+    }
+
+    bool render(SDL_Renderer* renderer) {
+      // find best texture
+      if (!_ntextures ||  _ntextures != _angles.size()) {
+        printf("Car::render(): there is no texture, or their size doesn't match with angles!\n");
+        return false;
+      }
+      unsigned int best_idx = 0;
+      double best_dist = 1E6, cosa = cos(_angle), sina = -sin(_angle);
+      for (unsigned int i = 0; i < _ntextures; ++i) {
+        double dist = fabs(_cosangles[i] - cosa) + fabs(_sinangles[i] - sina);
+        if (best_dist > dist) {
+          //printf("New best diff:%i, %g\n", i, dist);
+          best_idx = i;
+          best_dist = dist;
+        }
+      } // end for i
+      // render it
+      SDL_TexturePtr tex = _textures[best_idx];
+      SDL_Rect srcrect = _sizes[best_idx], dstrect = _sizes[best_idx];
+      dstrect.x = _xortho - _centers[best_idx].x;
+      dstrect.y = _yortho / 2 - _centers[best_idx].y; // conversion to isometric
+      //  printf("Car::render(%g, %g, angle:%g°)-->tex #%i/%i, size:(%i, %i), "
+      //         "srcrect:%s, dstrect:%s\n",
+      //         _xortho, _yortho, _angle * RAD2DEG, best_idx, _ntextures,
+      //         _sizes[best_idx].w, _sizes[best_idx].h,
+      //         rect2str(srcrect).c_str(), rect2str(dstrect).c_str());
+      if (SDL_RenderCopy(renderer, tex.get(), &srcrect, &dstrect) < 0) {
+        printf("movable:SDL_RenderCopy returned an error '%s'!\n", SDL_GetError());
+        return false;
+      }
+      return true;
+    }
+
+    Timer _update_timer;
+    double _maxspeed;
+    double _xortho, _yortho, _angle, _xspeed, _yspeed, _angspeed;
+    std::vector< SDL_TexturePtr > _textures;
+    unsigned int _ntextures;
+    std::vector<double> _angles, _cosangles, _sinangles;
+    std::vector<SDL_Point> _centers;
+    std::vector<SDL_Rect> _sizes;
+  }; // end class Car
+
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+
   MapRenderer() : _renderer(NULL), _map(NULL), _nmovables(0) {}
 
   ~MapRenderer() { clean(true); }
@@ -243,10 +270,20 @@ public:
       return clean(false);
     }
     // init the ROI of the map
-    SDL_QueryTexture(map_bmp, NULL, NULL, &(map_roi.w), &(map_roi.h));
-    map_roi.x = 0;  map_roi.y = 0;
+    SDL_QueryTexture(map_bmp, NULL, NULL, &_mapw, &_maph);
+    _map_roi.w = _mapw;
+    _map_roi.h = _maph;
+    _map_roi.x = 0;  _map_roi.y = 0;
     // create diamond hittest
     build_diamond_hittest(_diamond_hittest, _map->tile_width, _map->tile_height);
+    // create _map_hittest
+    _map_hittest.resize(_maph, std::vector<bool> (_mapw, false));
+    for (int row = 0; row < _maph; ++row) {
+      for (int col = 0; col < _mapw; ++col) {
+        _map_hittest[row][col] = point_in_layer_staggered(_map, _obstacles_layer,
+                                                          col, row, _diamond_hittest);
+      } // end for col
+    } // end for row
     return true;
   } // end init()
 
@@ -276,11 +313,6 @@ public:
     _nmovables++;
     _movables.push_back(Movable());
     return _movables[_nmovables-1].create(_renderer, xml_file, maxspeed, xortho, yortho, angle);
-    //_nmovables = 2;
-    //_movables.resize(_nmovables);
-    //_movables[0].create(_renderer, xml_file, maxspeed, xortho, yortho, angle);
-    //_movables[1].create(_renderer, xml_file, maxspeed, xortho, yortho, angle);
-    //return true;
   }
 
   //////////////////////////////////////////////////////////////////////////////
@@ -334,8 +366,18 @@ public:
 
     // update cars
     for (unsigned int i = 0; i < _nmovables; ++i)
-      _movables[i].update(_map, _obstacles_layer, _diamond_hittest);
+      _movables[i].update(*this);
     return true;
+  }
+
+  //////////////////////////////////////////////////////////////////////////////
+
+  template <class _T>
+  bool is_in_ostacles(const _T & xscreen, const _T & yscreen) {
+    if (xscreen < 0 || xscreen >= _mapw
+        || yscreen < 0 || yscreen >= _maph)
+      return false; // out of bounds
+    return _map_hittest[yscreen][xscreen]; // [row][col]
   }
 
   //////////////////////////////////////////////////////////////////////////////
@@ -343,7 +385,7 @@ public:
   bool render() {
     SDL_RenderClear(_renderer);
     // render map
-    if (SDL_RenderCopy(_renderer, map_bmp, NULL, &map_roi) != 0) {
+    if (SDL_RenderCopy(_renderer, map_bmp, NULL, &_map_roi) != 0) {
       printf("SDL_RenderCopy returned an error!\n");
       return false;
     }
@@ -361,8 +403,10 @@ private:
     _movable_rows.resize(_nmovables);
     for (unsigned int i = 0; i < _nmovables; ++i) {
       int row = _movables[i]._yortho / (_map->tile_height);
-      if (row < 0) row = 0;
-      else if (row >= (int) _map->height) row = _map->height;
+      if (row < 0)
+        row = 0;
+      else if (row >= (int) _map->height)
+        row = _map->height;
       _movable_rows[i] = row;
       // printf("car row:%i\n", row);
     }
@@ -403,10 +447,12 @@ protected:
   std::vector<SDL_Joystick*> _game_controllers;
   SDL_Renderer *_renderer;
   std::vector<bool> _diamond_hittest;
+  std::vector< std::vector<bool> > _map_hittest; // [row][col]
   // map stuff
+  int _mapw, _maph;
   tmx_map *_map;
   SDL_Texture  * map_bmp;
-  SDL_Rect map_roi;
+  SDL_Rect _map_roi;
   // obstacles
   tmx_layer* _obstacles_layer;
   unsigned int _nmovables;

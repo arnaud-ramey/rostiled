@@ -53,3 +53,9 @@ Publications
 ============
 
 None.
+
+
+Credits
+=======
+
+[SuperTuxKart karts](https://svn.code.sf.net/p/supertuxkart/code/media/trunk/karts/)

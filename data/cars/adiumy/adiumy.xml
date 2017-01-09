@@ -1,0 +1,28 @@
+<car scale=".25">
+  <view file="8.png"  angle="-165"  centerx="165" centery="126" flip="1"/>
+  <view file="9.png"  angle="-150"  centerx="165" centery="129" flip="1"/>
+  <view file="10.png" angle="-135"  centerx="158" centery="135" flip="1"/>
+  <view file="11.png" angle="-120"  centerx="140" centery="146" flip="1"/>
+  <view file="12.png" angle="-105"  centerx="116" centery="144" flip="1"/>
+
+  <view file="13.png" angle="-90"  centerx="115" centery="147"/>
+  <view file="12.png" angle="-75"  centerx="116" centery="144"/>
+  <view file="11.png" angle="-60"  centerx="140" centery="146"/>
+  <view file="10.png" angle="-45"  centerx="158" centery="135"/>
+  <view file="9.png"  angle="-30"  centerx="165" centery="129"/>
+  <view file="8.png"  angle="-15"  centerx="165" centery="126"/>
+  <view file="7.png"  angle="0"   centerx="161" centery="117"/>
+  <view file="6.png"  angle="15" centerx="164" centery="100"/>
+  <view file="5.png"  angle="30" centerx="150" centery="88"/>
+  <view file="4.png"  angle="45" centerx="152" centery="91"/>
+  <view file="3.png"  angle="60" centerx="137" centery="88"/>
+  <view file="2.png"  angle="75" centerx="128" centery="86"/>
+  <view file="1.png"  angle="90" centerx="115" centery="67"/>
+
+  <view file="2.png"  angle="105" centerx="128" centery="86"  flip="1"/>
+  <view file="3.png"  angle="120" centerx="137" centery="88" flip="1"/>
+  <view file="4.png"  angle="135" centerx="152" centery="91" flip="1"/>
+  <view file="5.png"  angle="150" centerx="150" centery="88" flip="1"/>
+  <view file="6.png"  angle="165" centerx="164" centery="100" flip="1"/>
+  <view file="7.png"  angle="180"   centerx="161" centery="117" flip="1"/>
+</car>

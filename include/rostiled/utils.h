@@ -167,8 +167,13 @@ SDL_Surface *ScaleSurface(SDL_Surface *Surface, Uint16 Width, Uint16 Height)
   if(!Surface  ||  !Width  ||  !Height)
     return 0;
 
-  SDL_Surface *_ret = SDL_CreateRGBSurface(Surface->flags, Width, Height, Surface->format->BitsPerPixel,
-                                           Surface->format->Rmask, Surface->format->Gmask, Surface->format->Bmask, Surface->format->Amask);
+  SDL_Surface *_ret = SDL_CreateRGBSurface(Surface->flags, Width, Height,
+                                           Surface->format->BitsPerPixel,
+                                           Surface->format->Rmask,
+                                           Surface->format->Gmask,
+                                           Surface->format->Bmask,
+                                           Surface->format->Amask);
+
 
   double    _stretch_factor_x = (static_cast<double>(Width)  / static_cast<double>(Surface->w)),
       _stretch_factor_y = (static_cast<double>(Height) / static_cast<double>(Surface->h));
@@ -179,6 +184,28 @@ SDL_Surface *ScaleSurface(SDL_Surface *Surface, Uint16 Width, Uint16 Height)
         for(Sint32 o_x = 0; o_x < _stretch_factor_x; ++o_x)
           putpixel(_ret, static_cast<Sint32>(_stretch_factor_x * x) + o_x,
                    static_cast<Sint32>(_stretch_factor_y * y) + o_y, getpixel(Surface, x, y));
+  return _ret;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+// http://www.sdltutorials.com/sdl-scale-surface
+SDL_Surface *FlipSurface(SDL_Surface *Surface)
+{
+  int w = Surface->w, h = Surface->h;
+  if(!Surface || !w || !h)
+    return 0;
+
+  SDL_Surface *_ret = SDL_CreateRGBSurface(Surface->flags, w, h,
+                                           Surface->format->BitsPerPixel,
+                                           Surface->format->Rmask,
+                                           Surface->format->Gmask,
+                                           Surface->format->Bmask,
+                                           Surface->format->Amask);
+
+  for(Sint32 y = 0; y < h; y++)
+    for(Sint32 x = 0; x < w; x++)
+      putpixel(_ret, w-1-x, y, getpixel(Surface, x, y));
   return _ret;
 }
 
