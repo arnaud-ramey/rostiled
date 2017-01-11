@@ -1,0 +1,21 @@
+<car scale=".08">
+  <view file="6.png"  angle="-157" centerx="495" centery="255" flip="1"/>
+  <view file="7.png"  angle="-135" centerx="477" centery="324" flip="1"/>
+  <view file="8.png"  angle="-113" centerx="392" centery="374" flip="1"/>
+
+  <view file="9.png"  angle="-90" centerx="273" centery="358"/>
+  <view file="8.png"  angle="-68" centerx="392" centery="374"/>
+  <view file="7.png"  angle="-45" centerx="477" centery="324"/>
+  <view file="6.png"  angle="-23" centerx="495" centery="255"/>
+  <view file="5.png"  angle="0"   centerx="486" centery="156"/>
+  <view file="4.png"  angle="23"  centerx="492" centery="162"/>
+  <view file="3.png"  angle="45"  centerx="454" centery="158"/>
+  <view file="2.png"  angle="68"  centerx="390" centery="130"/>
+  <view file="1.png"  angle="90"  centerx="273" centery="92"/>
+
+  <view file="2.png"  angle="113"  centerx="390" centery="130" flip="1"/>
+  <view file="3.png"  angle="135"  centerx="454" centery="158" flip="1"/>
+  <view file="4.png"  angle="157"  centerx="492" centery="162" flip="1"/>
+  <view file="5.png"  angle="180"   centerx="486" centery="156" flip="1"/>
+
+</car>

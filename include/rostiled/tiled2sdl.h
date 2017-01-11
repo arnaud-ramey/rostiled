@@ -95,9 +95,6 @@ public:
         std::string filename = folder_name + (char*) xmlGetProp(cur, (xmlChar*) "file");
         bool flip = safe_get_prop(cur, "flip", false);
         double angle = safe_get_prop(cur, "angle", 0.) * DEG2RAD;
-        SDL_Point center;
-        center.x = scale * safe_get_prop(cur, "centerx", 0);
-        center.y = scale * safe_get_prop(cur, "centery", 0);
         SDL_Surface* surf = IMG_Load(filename.c_str());
         if (!surf) {
           printf("Could not load surface '%s', %g\n", filename.c_str(), angle);
@@ -105,6 +102,13 @@ public:
         }
         SDL_Surface* surf_scaled = ScaleSurface(surf, scale*surf->w, scale*surf->h),
             *surf_flipped = NULL, *goodsurf = surf_scaled;
+        SDL_Point center;
+        center.x = scale * safe_get_prop(cur, "centerx", 0);
+        center.y = scale * safe_get_prop(cur, "centery", 0);
+        if (center.x == 0)
+          center.x = surf_scaled->w/2;
+        if (center.y == 0)
+          center.y = surf_scaled->h/2;
         //printf("surf_scaled:(%i, %i)\n", surf_scaled->w, surf_scaled->h);
         if (flip) {
           surf_flipped = FlipSurface(surf_scaled);
@@ -301,6 +305,7 @@ public:
       }
       printf( "Joystick %i connected\n", i);
       _game_controllers.push_back(curr);
+      _joy2movable.push_back(i % _nmovables);
     }
     return _game_controllers.size();
   }
@@ -310,6 +315,7 @@ public:
   bool create_movable(const std::string & xml_file,
                       double maxspeed = 1,
                       double xortho = 0, double yortho = 0, double angle = 0) {
+    printf("create_movable('%s')\n", xml_file.c_str());
     _nmovables++;
     _movables.push_back(Movable());
     return _movables[_nmovables-1].create(_renderer, xml_file, maxspeed, xortho, yortho, angle);
@@ -354,14 +360,20 @@ public:
 
       else if( event.type == SDL_JOYAXISMOTION ) {
         //Motion on controller 0
-        if( event.jaxis.which <= (int) _nmovables ) {
-          Movable* car = &(_movables[event.jaxis.which]);
+        unsigned int movable_idx = _joy2movable[event.jaxis.which];
+        if(movable_idx  <= _nmovables ) {
+          Movable* car = &(_movables[movable_idx]);
           if( event.jaxis.axis == 0 ) // X axis motion
             car->_xspeed = event.jaxis.value / 100;
           else if( event.jaxis.axis == 1)
             car->_yspeed = event.jaxis.value / 100;
         }
       } // end SDL_JOYAXISMOTION
+
+      else if( event.type == SDL_JOYBUTTONDOWN ) {
+        unsigned int movable_idx = _joy2movable[event.jaxis.which];
+        _joy2movable[event.jaxis.which] = (1+movable_idx) % _nmovables;
+      } // end SDL_JOYBUTTONDOWN
     } // end while (SDL_PollEvent)
 
     // update cars
@@ -445,6 +457,7 @@ private:
 protected:
   SDL_Window *_win;
   std::vector<SDL_Joystick*> _game_controllers;
+  std::vector<unsigned int> _joy2movable;
   SDL_Renderer *_renderer;
   std::vector<bool> _diamond_hittest;
   std::vector< std::vector<bool> > _map_hittest; // [row][col]

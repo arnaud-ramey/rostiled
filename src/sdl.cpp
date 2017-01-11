@@ -8,13 +8,14 @@ int main(/*int argc, char **argv*/) {
   std::string cars_path = ros::package::getPath("rostiled") + "/data/cars/";
   MapRenderer r;
   if (!r.init(longmap_name, 1350, 600)
-      || !r.init_joysticks()
-      //      || !r.create_movable(cars_path + "spiderman/spiderman.xml", 200, 200, 150)
-      || !r.create_movable(cars_path + "gimp/gimp.xml", 200, 200, 150)
-      || !r.create_movable(cars_path + "adiumy/adiumy.xml", 200, 300, 150)
-      || !r.create_movable(cars_path + "spiderman/spiderman.xml", 200, 400, 150))
+      || !r.create_movable(cars_path + "adiumy/adiumy.xml", 200, 100, 150)
+      || !r.create_movable(cars_path + "gimp/gimp.xml", 200, 150, 150)
+      || !r.create_movable(cars_path + "konqi/konqi.xml", 200, 200, 150)
+      || !r.create_movable(cars_path + "lego_kart/kart.xml", 200, 250, 150)
+      || !r.create_movable(cars_path + "spiderman/spiderman.xml", 200, 300, 150))
     return -1;
 
+  r.init_joysticks();
   // loop
   Rate rate(20);
   while (true) {

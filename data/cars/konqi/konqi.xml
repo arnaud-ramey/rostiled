@@ -1,0 +1,28 @@
+<car scale=".25">
+ <view file="8.png" angle="-165" flip="1"/>
+ <view file="9.png" angle="-150" flip="1"/>
+ <view file="10.png" angle="-135" flip="1"/>
+ <view file="11.png" angle="-120" flip="1"/>
+ <view file="12.png" angle="-105" flip="1"/>
+
+ <view file="13.png" angle="-90" />
+ <view file="12.png" angle="-75" />
+ <view file="11.png" angle="-60" />
+ <view file="10.png" angle="-45" />
+ <view file="9.png" angle="-30" />
+ <view file="8.png" angle="-15" />
+ <view file="7.png" angle="0" />
+ <view file="6.png" angle="15" />
+ <view file="5.png" angle="30" />
+ <view file="4.png" angle="45" />
+ <view file="3.png" angle="60" />
+ <view file="2.png" angle="75" />
+ <view file="1.png" angle="90" />
+
+ <view file="2.png" angle="105" flip="1"/>
+ <view file="3.png" angle="120" flip="1"/>
+ <view file="4.png" angle="135" flip="1"/>
+ <view file="5.png" angle="150" flip="1"/>
+ <view file="6.png" angle="165" flip="1"/>
+ <view file="7.png" angle="180" flip="1"/>
+</car>
