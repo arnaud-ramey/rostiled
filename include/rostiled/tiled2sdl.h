@@ -43,7 +43,7 @@ static void* sdl_img_loader(const char *path) {
 }
 
 template<class _T>
-_T safe_get_prop(const xmlNode *node,
+_T safe_get_prop(/*const*/ xmlNode *node,
                  const std::string & name,
                  _T default_val) {
   if (!xmlHasProp(node, (xmlChar*) name.c_str()))
