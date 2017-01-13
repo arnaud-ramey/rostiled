@@ -153,8 +153,8 @@ public:
     } // end ctor
 
     void advance(const double & dist) {
-      _xortho += cos(-_angle) * dist;
-      _yortho += sin(-_angle) * dist;
+      _xortho += cos(_angle) * dist;
+      _yortho += sin(_angle) * dist;
     }
 
     void set_speeds(const double & v, const double & w) {
@@ -351,7 +351,7 @@ public:
           //        case SDL_SCANCODE_UP:    map_rect.y += 10; break;
           //        case SDL_SCANCODE_DOWN:  map_rect.y -= 10; break;
           case SDL_SCANCODE_LEFT:  _movables.front()._angle -= .1; break;
-          case SDL_SCANCODE_RIGHT: _movables.front()._angle += 1; break;
+          case SDL_SCANCODE_RIGHT: _movables.front()._angle += .1; break;
           case SDL_SCANCODE_UP:    _movables.front().advance(10); break;
           case SDL_SCANCODE_DOWN:  _movables.front().advance(-5); break;
           default: break;
